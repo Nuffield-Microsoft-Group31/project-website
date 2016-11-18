@@ -90,3 +90,44 @@ body {
 #timeline, #technologies {
   background-color: #EEE;
 }
+
+.white-text {
+  color: #EEE;
+  font-weight: 700;
+}
+
+td {
+  vertical-align: top !important;
+}
+
+.timeline {
+  width: 10px;
+  background-color: #555;
+  margin: 0px;
+  margin-left:20px;
+  margin-right: 10px;
+  padding: 0px;
+  border: none;
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.anchor {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #555;
+  margin: 0px;
+  margin-left:20px;
+  margin-right: 10px;
+  padding: 0px;
+  position: relative;
+  top: 25px;
+  right: 20px;
+  border: none;
+}
+
+.done {
+  background-color: #F85A56;
+}
