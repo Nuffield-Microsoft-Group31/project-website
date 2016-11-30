@@ -74,6 +74,10 @@
           <div class="container-fluid">
             <h1>Introduction</h1>
             <p>UCL Active is a platform developed by UCL that will collect data, process it and share it. Our team is working on dashboards for both corporate and personal users that will display their acheivements and plans. It will also use machine learning to give accurate predictions for reaching goals set by the user.</p>
+            <h2>Background and Context</h2>
+            <p>We will be working in collaboration with Nuffield Health Hospital and Microsoft. Nuffield Health Hospital is a private health centre which provides variety of services such as Physiotherapy, Health Assessments, Emotional Wellbeing and even Gym facilities. We will be equipped and fully supported by Microsoft to deliver additional and innovative services to Nuffield Health’s clients and professionals. Furthermore, we will be working closely with the Digital Assistance team and Diana a 3rd year Computer Science student to deliver the final product. </p>
+            <p>The project will be split into two phases. Phase one of the project will be dedicated to creation of requirements and research, identifying strategies and the correct technologies, development of R&D experiments, architecture designs, development of experiments that will lead to our PoC design(s) and to build one or more prototypes. The second phase will largely be based on implementation and the core development of the functionalities of the platform.</p>
+            <p>The initial problem that we are tackling is to be able to create a user friendly and informative data visualisation both for Nuffield Health clients and their professionals to. The platform for their clients will consist of interactive and attractive visualisation of their own data to help them make better and more informative decisions for their lifestyle. Additionally, we would like the system to give recommendations to the users to improve their health. The platform for the professional will consist of data visualisation of all the relevant information of their clients, to spot trends and tendencies to make their services even better. Furthermore, we will be using Machine Learning with the help of Microsoft to perform analysis based on gym attendance to improve the attendance of their clients. </p>
             <h2>Clients</h2>
             <div class="row">
               <div class="col-md-2 col-xs-6 col-sm-4">
@@ -139,7 +143,7 @@
                   <td><div class= "anchor done"></div><td>
                   <td>
                       <h2>Briefing</h2>
-                      <p>During this stage, the roles were decided and the first meetings with the clients and the supervisors took place. We have gotten the general idea of the project was formed. The technologies that could fit the requirements were proposed to research and compare to decide what to use.</p>
+                      <p>During this stage, the roles were decided and the first meetings with the clients and the supervisors took place.The general idea of the project was formed. The technologies that could fit the requirements were proposed to research and compare to decide what to use. Furthermore, we met up with the Digital Assistance team that we would be collaborating with and Diana.</p>
                   </td>
                 </tr>
                 <tr>
@@ -147,7 +151,7 @@
                   <td><div class= "anchor done"></div><td>
                   <td>
                       <h2>Research</h2>
-                      <p>During this stage, the project specification will be completed and the initial technologies used will be agreed upon. The arcitechture also needs to be approved by the clients.</p>
+                      <p>During this stage, we will have carefully identified the project specification and requirements with a particular focus on usability, alongside market research. Through research will be done by each member for different segments of the project to identify relevant new technologies, feasibility, complexity and risk. Furthermore, the architecture design as well as the appropriate software engineering principles will be decided at this stage and confirmed by the client.</p>
                   </td>
                 </tr>
                 <tr>
@@ -155,6 +159,7 @@
                   <td><div class= "anchor"></div><td>
                   <td>
                       <h2>Testing and Experimentation</h2>
+                      <p>During this stage the fundamental topics that were investigated in the “Research” timeline will be tested and experimented. There will be a creation of experiment logs that will include specific experiments for different features and components of the platform that is being developed. The experiment log will be recording the experiment details, results and the success and failure of each.</p> 
                   </td>
                 </tr>
                 <tr>
@@ -162,6 +167,7 @@
                   <td><div class= "anchor"></div><td>
                   <td>
                       <h2>PoC and Prototyping</h2>
+                      <p>During this stage we will begin our proof of concept to demonstrate the feasibility and to verify the concept has practical potential. We will begin to create a working prototype based on our “research” and “experimentation” stages and this will be showed to the client for further improvements. </p>
                   </td>
                 </tr>
                 <tr>
@@ -169,6 +175,7 @@
                   <td><div class= "anchor"></div><td>
                   <td>
                       <h2>Development</h2>
+                      <p>The Development stage will be mostly developed through second phase of the project. After completion of the prototyping stage we will start developing the core functionalities of the platform, such as the development of the dashboards alongside the interactive visualisation and machine learning implementations.</p>
                   </td>
                 </tr>
               </table>
@@ -185,7 +192,24 @@
         <!-- Technologies Section -->
         <div id='technologies' class = 'scrollable-page'>
           <div class="container-fluid">
-              <h1>Technologies</h1>
+              <h1>Technologies & Research</h1>
+              <p>In this section we will be going in depth about the specific research done for the choice of our technolgies and platforms.</p>
+
+              <h3>Microsoft Platforms</h3>
+              <p>Collaborating with Microsoft has enabled us to use many tools and platforms for our project. We will be using Visual Studio Team Services (VSTS) for our version control alongside other useful features such as measuring and reporting tools. Additionally we will be using Microsoft Azure which enables us to handle most of our back-end systems, such as the implementation of Authorisation, Messaging queue (Azure queue) and database systems. Microsoft Azure will enable us to collaborate closely and makes it easier to link different parts of the project together.  Furthermore, we will be using Azure Machine Learning platform to perform data analysis as part of our project.</p>
+
+              <h3>Database Systems</h3>
+              <p>For Most projects there will always be a requirement of storing and transfer of data and for our project this isn’t an exception. We will be storing Fast Healthcare Interoperability Resources (FIHR) messages. It uses JSON or XML for data representation and its goal is to facilitate interoperation between healthcare systems, so that it is easier to deliver heath care information to healthcare providers and individuals. </p>
+
+              <p>For our project we will need both a SQL and a NoSQL database. We will be using a SQL database from azure to store all the information of clients and to be able to easily access these data for data visualisation. However, a NoSQL database is also required which will enable us to have rapid and analysis of large volumes, different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) weren’t designed to address.</p>
+
+              <p>As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two and the differences between them such as one being “Column-based” and the other “Document-based” and came to a conclusion which would be the most suitable for our development. In the end we decided to proceed with MongoDB as it had clear advantages which specifically addressed our needs and it gave us the flexibility of launching MongoDB on Azure. You can read more about the specifics below.</p>
+
+              <h3>Messaging Queues and Event Hubs</h3>
+
+              <h3>Authorisation</h3>
+
+              <h3>Data Visualisation</h3>
           </div>
         </div>
 
