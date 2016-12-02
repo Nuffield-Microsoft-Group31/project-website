@@ -147,3 +147,15 @@ img.opacity:hover {
 .imfit {
   width: 100%;
 }
+
+.yellow {
+  color: #d39d15;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
