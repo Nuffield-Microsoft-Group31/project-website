@@ -30,6 +30,7 @@
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#specification">Specification</a></li>
             <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#experiments">Experiments</a></li>
             <li><a href="#documents">Documents</a></li>
           </ul>
         </nav>
@@ -46,6 +47,7 @@
           <li><a href="#timeline">Timeline</a></li>
           <li><a href="#specification">Specification</a></li>
           <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#experiments">Experiments</a></li>
           <li><a href="#documents">Documents</a></li>
         </ul>
       </div>
@@ -75,7 +77,7 @@
             <h1>Introduction</h1>
             <p>UCL Active is a platform developed by UCL that will collect data, process it and share it. Our team is working on dashboards for both corporate and personal users that will display their acheivements and plans. It will also use machine learning to give accurate predictions for reaching goals set by the user.</p>
             <h2>Background and Context</h2>
-            <p>We will be working in collaboration with Nuffield Health Hospital and Microsoft. Nuffield Health Hospital is a private health centre which provides variety of services such as Physiotherapy, Health Assessments, Emotional Wellbeing and even Gym facilities. We will be equipped and fully supported by Microsoft to deliver additional and innovative services to Nuffield Health’s clients and professionals. Furthermore, we will be working closely with the Digital Assistance team and Diana a 3rd year Computer Science student to deliver the final product. </p>
+            <p>We will be working in collaboration with Nuffield Health Hospital and Microsoft. Nuffield Health Hospital is a private health centre which provides variety of services such as Physiotherapy, Health Assessments, Emotional Wellbeing and even Gym facilities. We will be equipped and fully supported by Microsoft to deliver additional and innovative services to Nuffield Health's clients and professionals. Furthermore, we will be working closely with the Digital Assistance team and Diana a 3rd year Computer Science student to deliver the final product. </p>
             <p>The project will be split into two phases. Phase one of the project will be dedicated to creation of requirements and research, identifying strategies and the correct technologies, development of R&D experiments, architecture designs, development of experiments that will lead to our PoC design(s) and to build one or more prototypes. The second phase will largely be based on implementation and the core development of the functionalities of the platform.</p>
             <p>The initial problem that we are tackling is to be able to create a user friendly and informative data visualisation both for Nuffield Health clients and their professionals to. The platform for their clients will consist of interactive and attractive visualisation of their own data to help them make better and more informative decisions for their lifestyle. Additionally, we would like the system to give recommendations to the users to improve their health. The platform for the professional will consist of data visualisation of all the relevant information of their clients, to spot trends and tendencies to make their services even better. Furthermore, we will be using Machine Learning with the help of Microsoft to perform analysis based on gym attendance to improve the attendance of their clients. </p>
             <h2>Clients</h2>
@@ -147,7 +149,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="timeline"></td>
+                  <td class="timeline done"></td>
                   <td><div class= "anchor done"></div><td>
                   <td>
                       <h2>Research</h2>
@@ -156,10 +158,10 @@
                 </tr>
                 <tr>
                   <td class="timeline"></td>
-                  <td><div class= "anchor"></div><td>
+                  <td><div class= "anchor done"></div><td>
                   <td>
                       <h2>Testing and Experimentation</h2>
-                      <p>During this stage the fundamental topics that were investigated in the “Research” timeline will be tested and experimented. There will be a creation of experiment logs that will include specific experiments for different features and components of the platform that is being developed. The experiment log will be recording the experiment details, results and the success and failure of each.</p> 
+                      <p>During this stage the fundamental topics that were investigated in the “Research" timeline will be tested and experimented. There will be a creation of experiment logs that will include specific experiments for different features and components of the platform that is being developed. The experiment log will be recording the experiment details, results and the success and failure of each.</p>
                   </td>
                 </tr>
                 <tr>
@@ -167,7 +169,7 @@
                   <td><div class= "anchor"></div><td>
                   <td>
                       <h2>PoC and Prototyping</h2>
-                      <p>During this stage we will begin our proof of concept to demonstrate the feasibility and to verify the concept has practical potential. We will begin to create a working prototype based on our “research” and “experimentation” stages and this will be showed to the client for further improvements. </p>
+                      <p>During this stage we will begin our proof of concept to demonstrate the feasibility and to verify the concept has practical potential. We will begin to create a working prototype based on our “research" and “experimentation" stages and this will be showed to the client for further improvements. </p>
                   </td>
                 </tr>
                 <tr>
@@ -186,6 +188,259 @@
         <div id='specification' class = 'scrollable-page'>
           <div class="container-fluid">
               <h1>Specification</h1>
+              <h2>Requirements</h2>
+              <h4>Authorisation</h4>
+              <ul>
+                <li>User Login using social media identity</li>
+                <li>Identify of user links with third party identity </li>
+                <li>Selection of subscribes to share data with</li>
+              </ul>
+              <h4>Messaging Queue</h4>
+              <ul>
+                <li>Message queuing system should be implemented to integrate all components</li>
+                <li>Subscriber able to pull only appropriate messages</li>
+                <li>Unauthorised publisher unable to publish message</li>
+                <li>Queues capacity large enough to handle large amount of messages</li>
+              </ul>
+              <h4>Data Storage</h4>
+              <ul>
+                <li>User data stored in NoSQL database automatically as messages go into the queue</li>
+                <li>Data Visualisation from data stored</li>
+                <li>Machine Learning on specific data</li>
+              </ul>
+              <h4>Dashboard</h4>
+              <ul>
+                <li>Two dashboards, one for customers and one for corporate</li>
+                <li>User able to specify goals either corporate or personal </li>
+                <li>Relevant interactive data displayed in a motivational way for customers</li>
+                <li>Relevant interactive data displayed in an informative way for corporate use and decision making</li>
+                <li>Tailored bespoke notification targeted at clients in relation to their initial objectives and their current progression using machine learning </li>
+              </ul>
+
+              <h2>Personas</h2>
+              <h3>George Williams</h3>
+              <h4>Male, 27</h4>
+              <div class="row">
+                <div class="col-md-4 col-xs-12">
+                  <img src = "img/persona1.png" class="imfit">
+                  <h4>"I know it's time to get in shape!"</h4>
+                  <h5>Occupation: Accountant<br>Type: Customer</h5>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div class="well">
+                    <p>George has a full-time job and likes to watch tv when he gets home. Although he enjoys his lifestyle, he feels like change is necessary. He feels knows he needs to get in shape, but is afraid of failure. Despite his fears, he has bought Nuffield gym membership.</p>
+                    <h4>Goals</h4>
+                    <ul>
+                      <li>Get in shape</li>
+                      <li>Get healthier</li>
+                      <li>Be more confident</li>
+                    </ul>
+                    <h4>Needs</h4>
+                    <ul>
+                      <li>Visible progress</li>
+                      <li>Motivation</li>
+                    </ul>
+                    <h4>Pain Points</h4>
+                    <ul>
+                      <li>Gets demotivated easily</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <h5>Comfortable with Technology</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    </div>
+                  </div>
+                  <h5>Motivated</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    </div>
+                  </div>
+                  <h5>Organised</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    </div>
+                  </div>
+                  <h5>Easily Distracted</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    </div>
+                  </div>
+                  <h5>Sportsy</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Gemma Smith</h3>
+              <h4>Female, 30</h4>
+              <div class="row">
+                <div class="col-md-4 col-xs-12">
+                  <img src = "img/persona2.png" class="imfit">
+                  <h4>"It's time to be more efficient and goal oriented!"</h4>
+                  <h5>Occupation: Senior Public Health Specialist<br>Type: Customer</h5>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div class="well">
+                    <p>Gemma is a health specialist and take her health and lifestyle very seriously. She actively goes to the Nuffield Health Gym and tries to stay in shape. However over the past few months, her workload has increased and she has seen very slow progress and she is unsure what areas she should focus on. To progress for the better she registred at NuffieldHealthActive to improve her progress.</p>
+                    <h4>Goals</h4>
+                    <ul>
+                      <li>Be more efficient in training</li>
+                      <li>Manage Time</li>
+                    </ul>
+                    <h4>Needs</h4>
+                    <ul>
+                      <li>Visible progress</li>
+                      <li>Precise and accurate data</li>
+                    </ul>
+                    <h4>Pain Points</h4>
+                    <ul>
+                      <li>Job can get busy and unpredictable</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <h5>Comfortable with Technology</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    </div>
+                  </div>
+                  <h5>Motivated</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    </div>
+                  </div>
+                  <h5>Organised</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                    </div>
+                  </div>
+                  <h5>Easily Distracted</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                  </div>
+                  <h5>Sportsy</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Sandra Clarkson & Jess Hunter</h3>
+              <h4>Female, 28, 33</h4>
+              <div class="row">
+                <div class="col-md-4 col-xs-12">
+                  <img src = "img/persona3.png" class="imfit">
+                  <h4>"How can we make sure we are helping, supporting and encouraging our customers to be as healthy as they can be?"</h4>
+                  <h5>Occupation: Senior Public Health Specialist<br>Type: Customer</h5>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div class="well">
+                    <h4>Goals</h4>
+                    <ul>
+                      <li>Improve customer loyalty</li>
+                      <li>Identify optimisation opportunities</li>
+                      <li>Conduct marketing analysis</li>
+                    </ul>
+                    <h4>Needs</h4>
+                    <ul>
+                      <li>Gather high-quality data on customers</li>
+                      <li>Access to analytics tools</li>
+                      <li>Overview of client-base data</li>
+                    </ul>
+                    <h4>Pain Points</h4>
+                    <ul>
+                      <li>Difficulties understanding customer behaviour</li>
+                      <li>Accessing sensible information on health of clients</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <h5>Comfortable with Technology</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    </div>
+                  </div>
+                  <h5>Motivated</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                    </div>
+                  </div>
+                  <h5>Organised</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    </div>
+                  </div>
+                  <h5>Easily Distracted</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                  </div>
+                  <h5>Sportsy</h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>User Stories</h2>
+
+              <h3>Motivation for attendance</h3>
+              <img src='img/story1.png' class="imfit">
+              <p>George has not been to the gym in a while. He is also considering giving up altogether and not extending his membership. The app detects that his behavioural patterns show he is very likely to stop attending and not consider returning. It notifies him and reminds him that he is not achieving his goals. Once he opens his app, the app displays his goal and his progress and suggests a gym session to catch up. He reluctantly decides to pay his local gym another visit and slowly regains his motivation to continue. He ends up extending his membership.</p>
+              <div class="well">
+                <h4>Key Features</h4>
+                  <ul>
+                    <li>ML algorithms trained on a large set of data</li>
+                    <li>Personal record that includes his gym attendance from swipe system</li>
+                    <li>Dashboard with visualisation of data</li>
+                    <li>Message queue used for integration of those parts</li>
+                  </ul>
+                <h4>Key Business Impact</h4>
+                <ul>
+                  <li>Decreased number of customers who do not extend membership</li>
+                  <li>Enhanced user experience</li>
+                  <li>Data collected provides new information for improving ML algorithms</li>
+                </ul>
+              </div>
+
+              <h3>Dashboard effectiveness for clients</h3>
+              <img src='img/story2.png' class="imfit">
+              <p>Gemma has been part of Nuffield Health hospital for a year and she takes great care of her health. She attends the gym regularly; however recently she has been unable to focus on particular things that she should be working on to improve her health. She then decides to register and login to NuffieldHealthActive to set herself personalised goals to achieve for the current week and month. Furthermore, she is presented with attractive and interactive data of her performance and personal health data. By viewing this visualisation she's able to track her health and gain more insight about what she should focus on for the future.</p>
+              <div class="well">
+                <h4>Key Features</h4>
+                  <ul>
+                    <li>ML algorithms trained on a large set of data for motivational purposes</li>
+                    <li>Dashboard with interactive visualisation of data (D3.js)</li>
+                    <li>Access to client data through Nuffield Health Hospital</li>
+                  </ul>
+                <h4>Key Business Impact</h4>
+                <ul>
+                  <li>Higher customer satisfaction</li>
+                  <li>Increased use of Nuffield Health Services</li>
+                </ul>
+              </div>
+
+              <h3>Dashboard usage for Corporates</h3>
+              <img src='img/story3.png' class="imfit">
+              <p>Sandra is part of a marketing team. Part of her role is to report to Senior management on a regular basis and provide insight into the firm's client-base. In general meetings with management, the firm will take decisions based on Sandra's work. By providing innovative and value-adding insights to the meeting, Sandra enables better decisions to be made, every time.</p>
+              <div class="well">
+                <h4>Key Features</h4>
+                  <ul>
+                    <li>Overview of volume, attendance and loyalty levels of customer population</li>
+                    <li>Interactive graphs built in D3.js</li>
+                  </ul>
+                <h4>Key Business Impact</h4>
+                <ul>
+                  <li>Privileged access to data visualisation of customer population and business data</li>
+                  <li>Improved decision making</li>
+                </ul>
+              </div>
           </div>
         </div>
 
@@ -199,23 +454,46 @@
               <p>Collaborating with Microsoft has enabled us to use many tools and platforms for our project. We will be using Visual Studio Team Services (VSTS) for our version control alongside other useful features such as measuring and reporting tools. Additionally we will be using Microsoft Azure which enables us to handle most of our back-end systems, such as the implementation of Authorisation, Messaging queue (Azure queue) and database systems. Microsoft Azure will enable us to collaborate closely and makes it easier to link different parts of the project together.  Furthermore, we will be using Azure Machine Learning platform to perform data analysis as part of our project.</p>
 
               <h3>Database Systems</h3>
-              <p>For Most projects there will always be a requirement of storing and transfer of data and for our project this isn’t an exception. We will be storing Fast Healthcare Interoperability Resources (FIHR) messages. It uses JSON or XML for data representation and its goal is to facilitate interoperation between healthcare systems, so that it is easier to deliver heath care information to healthcare providers and individuals. </p>
+              <p>For Most projects there will always be a requirement of storing and transfer of data and for our project this isn't an exception. We will be storing Fast Healthcare Interoperability Resources (FIHR) messages. It uses JSON or XML for data representation and its goal is to facilitate interoperation between healthcare systems, so that it is easier to deliver heath care information to healthcare providers and individuals. </p>
 
-              <p>For our project we will need both a SQL and a NoSQL database. We will be using a SQL database from azure to store all the information of clients and to be able to easily access these data for data visualisation. However, a NoSQL database is also required which will enable us to have rapid and analysis of large volumes, different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) weren’t designed to address.</p>
+              <p>For our project we will need both a SQL and a NoSQL database. We will be using a SQL database from azure to store all the information of clients and to be able to easily access these data for data visualisation. However, a NoSQL database is also required which will enable us to have rapid and analysis of large volumes, different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) weren't designed to address.</p>
 
-              <p>As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two and the differences between them such as one being “Column-based” and the other “Document-based” and came to a conclusion which would be the most suitable for our development. In the end we decided to proceed with MongoDB as it had clear advantages which specifically addressed our needs and it gave us the flexibility of launching MongoDB on Azure. You can read more about the specifics below.</p>
+              <p>As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two and the differences between them such as one being "Column-based" and the other "Document-based" and came to a conclusion which would be the most suitable for our development. In the end we decided to proceed with MongoDB as it had clear advantages which specifically addressed our needs and it gave us the flexibility of launching MongoDB on Azure. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
 
               <h3>Messaging Queues and Event Hubs</h3>
 
-              <h3>Authorisation</h3>
+              <p>Message queuing is a communication system used by different processes. In its simple form it is a first-in, first-out data structure of messages (of various formats). The data is being published by publishing processes (publishers) and retrieved by consuming processes (consumers). </p>
+
+              <p>For the requirements of this project, we will need a message queuing service that could handle a large amount of messages being sent. In addition to its basic functionality, we will need to make data accessible only to consumers previously specified by the publisher. Additionally, all the data sent over the service will be stored in the NoSQL database.</p>
+
+              <p>Two solutions were proposed. The first one was to use Event Hubs which provide most of the functionality specified. The other one was the Azure Queue, which is a simple message queuing service with lower capabilities and fewer features. Although Event Hubs would be convenient to use, they are designed to hold a bigger amount of messages we could ever expect to be sent through this app and their additional features do not justify their costliness since they can be simulated by e.g. using multiple messaging queues.</p>
+
+              <p>A possible alternative to the Azure Queue implementation would be an open source tool rabbitMQ. While its capabilities are similar to the capabilities of Azure Queue. However, we have decided to use Azure Queues as they are easy to manage within the Azure portal. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+
+              <h3>Authentication</h3>
+
+              <p>Authentication is a process that ensures and confirms a user’s identity. Since access control is normally based on the identity of the user who requests access to a resource or a service, authentication is essential to effective security.</p>
+
+              <p>OAuth is an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications. It is used as a way for Internet users to log in to third party websites through an access token mechanism, using their accounts at Google, Facebook, Microsoft, Twitter, etc.—but without exposing their password.</p>
+
+              <p>In this project we use OAuth in conjunction with Azure Active Directory - Microsoft’s multi-tenant cloud based directory and identity management service. It is a powerful identity and access management service (IDaaS) for on-premises and cloud-based apps and provides administrators with the ability to manage end user identities and access privileges.</p>
+
+              <p>In order to use Active Directory, we had to register the application with the service, obtain the application Redirect URI, determine whether we were building a web or native application. A registered application is uniquely identified within the directory. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
 
               <h3>Data Visualisation</h3>
               <p>An integral part of our project will be based on creation of visualisation for both client and corporate use. Visualisation enables decision makers to see analytics presented visually which makes grasping complex and large data easier. With interactive data visualisation you are able to give the user access to drill down in more specific details that they require to find out how they are processed. Furthermore, an attractive data visualisation can help motivate users and it can also help users to identify areas that need attention and improvement.</p>
 
-              <p>To do this we have decided to use the platform D3.js. D3.js is a JavaScript library for manipulating documents based on data. As stated from the D3.js website d3js.org “D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combing powerful visualisation components and a data-driven approach to DOM manipulation.”  Therefore, D3 is by far the best choice for our application, since it uses a functional style we are able to reuse code and add specific function to our content with great flexibility on the style and the interactive of our data.</p>
+              <p>To do this we have decided to use the platform D3.js. D3.js is a JavaScript library for manipulating documents based on data. As stated from the D3.js website d3js.org “D3's emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combing powerful visualisation components and a data-driven approach to DOM manipulation."  Therefore, D3 is by far the best choice for our application, since it uses a functional style we are able to reuse code and add specific function to our content with great flexibility on the style and the interactive of our data.</p>
 
               <h3>Machine Learning</h3>
-              <p>Machine learning was born from pattern matching and based on the theory that computers can learn without being programmed to perform specific tasks. The theory is all about if a machine is able to learn from data that is provided by it using smart algorithms. For this project we will be using the Azure Machine Learning platform to train data about gym attendance of Nuffield Health. By doing so we hope to gain useful information where than we can provide to both the clients and corporate users valuable and beneficial information. For example by building precise models, an organisation such as Nuffield Health Hospital has a better chance of identifying profitable opportunities or avoiding unknown risks.</p>
+              <p>Machine learning was born from pattern matching and based on the theory that computers can learn without being programmed to perform specific tasks. The theory is all about if a machine is able to learn from data that is provided by it using smart algorithms. For this project we will be using the Azure Machine Learning platform to train data about gym attendance of Nuffield Health. By doing so we hope to gain useful information where than we can provide to both the clients and corporate users valuable and beneficial information. For example by building precise models, an organisation such as Nuffield Health Hospital has a better chance of identifying profitable opportunities or avoiding unknown risks. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+          </div>
+        </div>
+
+        <!-- Experiments Section -->
+        <div id='experiments' class = 'scrollable-page'>
+          <div class="container-fluid">
+              <h1>Experiments</h1>
           </div>
         </div>
 
@@ -228,26 +506,54 @@
               <div class="col-lg-4 col-md-6 col-xs-12">
                 <div class="well">
                   <h4><span class="glyphicon glyphicon-file"></span> Bi-Weekly Report 1</h4>
-                  <h5>18 Oct 2016</h5>
-                  <h6><a href="documents/biweekly/BiWeeklyReport1.pdf"><span class="glyphicon glyphicon-download-alt"></span>Download</a></h6>
+                  <h5>12 Oct 2016</h5>
+                  <h6><a href="documents/biweekly/BiWeeklyReport1.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-xs-12">
                 <div class="well">
                   <h4><span class="glyphicon glyphicon-file"></span> Bi-Weekly Report 2</h4>
-                  <h5>18 Oct 2016</h5>
-                  <h6><a href="documents/biweekly/BiWeeklyReport2.pdf"><span class="glyphicon glyphicon-download-alt"></span>Download</a></h6>
+                  <h5>28 Oct 2016</h5>
+                  <h6><a href="documents/biweekly/BiWeeklyReport2.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-xs-12">
                 <div class="well">
                   <h4><span class="glyphicon glyphicon-file"></span> Bi-Weekly Report 3</h4>
-                  <h5>18 Oct 2016</h5>
-                  <h6><a href="documents/biweekly/BiWeeklyReport3.pdf"><span class="glyphicon glyphicon-download-alt"></span>Download</a></h6>
+                  <h5>18 Nov 2016</h5>
+                  <h6><a href="documents/biweekly/BiWeeklyReport3.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
                 </div>
               </div>
             </div>
-        </div>
+
+            <h2 id='rdocs'>Research Reports</h2>
+            <div class = 'row'>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="well">
+                  <h4><span class="glyphicon glyphicon-file"></span> Database Systems</h4>
+                  <h6><a href="documents/research/DBSystems.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="well">
+                  <h4><span class="glyphicon glyphicon-file"></span> Message Queuing</h4>
+                  <h6><a href="documents/research/MessageQueuing.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="well">
+                  <h4><span class="glyphicon glyphicon-file"></span> Authentiaction</h4>
+                  <h6><a href="documents/research/Authentication.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="well">
+                  <h4><span class="glyphicon glyphicon-file"></span> Machine Learning</h4>
+                  <h6><a href="documents/research/ML.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
 
