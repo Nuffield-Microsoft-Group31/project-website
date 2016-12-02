@@ -87,7 +87,7 @@ body {
   margin: 0px;
 }
 
-#timeline, #technologies {
+#timeline, #technologies, #documents {
   background-color: #EEE;
 }
 
@@ -132,8 +132,8 @@ img.opacity {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
  	-webkit-transition: opacity 1s linear;
-}	
-	
+}
+
 img.opacity:hover {
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -142,4 +142,8 @@ img.opacity:hover {
 
 .done {
   background-color: #F85A56;
+}
+
+.imfit {
+  width: 100%;
 }
