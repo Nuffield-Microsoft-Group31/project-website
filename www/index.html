@@ -31,6 +31,7 @@
             <li><a href="#requirements">Requirements</a></li>
             <li><a href="#research">Research & Technologies</a></li>
             <li><a href="#experiments">Experiments</a></li>
+            <li><a href="#hci">HCI</a></li>
             <li><a href="#documents">Documents</a></li>
           </ul>
         </nav>
@@ -48,6 +49,7 @@
           <li><a href="#requirements">Requirements</a></li>
           <li><a href="#research">Research & Technologies</a></li>
           <li><a href="#experiments">Experiments</a></li>
+          <li><a href="#hci">HCI</a></li>
           <li><a href="#documents">Documents</a></li>
         </ul>
       </div>
@@ -64,8 +66,8 @@
         <!-- Home Section -->
         <div id='home'>
           <div class="container-fluid" id='home-container'>
-              <img src = 'img/logo.png'>
-              <h1 class='white-text'>Transpire</h1>
+              <img src = 'img/transpireLogo.png' width=20%; height=20%>
+              <!-- <h1 class='white-text'>Transpire</h1> -->
               <h2 class='white-text'>Team 31 Project Website</h2>
           </div>
         </div>
@@ -209,12 +211,12 @@
 
               <p>The project will be split into two phases. Phase one of the project will be dedicated to creation of requirements and research, identifying strategies and the correct technologies, development of R&D experiments, architecture designs, development of experiments that will lead to our PoC design(s) and to build one or more prototypes. The second phase will largely be based on implementation and the core development of the functionalities of the platform as well as creating a solid documentation and the future plans of the project.</p>
 
-              <h2>Requirement Gathering</h2>
+              <h3>Requirement Gathering</h3>
               <p>For this specific project our team decided to use a range of variety of requirement gathering techniques. Initially and throughout the project we held multiple Interview and meetings with our client to gather and create suitable goals and requirements. This is due to our project consisting of heavy backend and heavy front-end segments. Therefore, we needed to arrange multiple interviews to agree on the backend architecture as well as the front-end design of the system.</p>
 
               <p>Additionally, another method of gathering data was through prototyping. By opting for the agile approach, we continually created prototypes and features throughout our sprints of the system and held meetings with the client to gather feedback. Moreover, we held multiple brainstorming sessions to utilise our requirements during each sprint in the best way possible.</p>
 
-              <h2>Requirements</h2>
+              <h3>Requirements</h3>
               <p>Our team has decided to use the Agile software development practice. Agile development excels at reducing risk by creating software in short timeframes. Agile is usually done in iterations or sprints, where each iteration is usually 1-4 weeks long. The intent of these iterations is to develop software and/or features which will have functionality at the end of the short timeframe. Within each iteration, the development life cycle of requirements gathering, design, development, testing and documentation is prepared as if it is treated like a small sub-project. Therefore, we have presented to you an overall view of the general requirements as well as the requirements agreed on during each sprint.</p>
 
               <h3>Overall Requirements</h3>
@@ -1131,6 +1133,57 @@
 
           </div>
         </div>
+
+        <!-- HCI Section -->
+        <div id='hci' class='scrollable-page'>
+          <div class='container-fluid'>
+          <h1>Human Computer Interaction Principles</h1>
+          <p>In this section we will exploring some of the important HCI principles that we used within our project as well as showcasing screenshots of our final prototype and some initial sketches of the dashboard.</p>  
+           <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="img/design1.png">
+                  <img src="img/design1.png" style="width:100%">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/design2.png">
+                    <img src="img/design2.png" style="width:100%">
+                    <div class="caption">
+                      <p>Initial sketches of the dashboard with different possible graphs displayed.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/design3.png">
+                    <img src="img/design3.png" style="width:100%">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+        <h3>Visibility & Affordance</h3>
+        <p>Visibility and affordance play an important role in our approach of integrating HCI elements within our project. We designed the interfaces so that just the right things are made visible. With this in mind we wanted every click performed by the user to have direct effect on what they see on the interface. Our landing page is a very simple, yet characteristic interface and initial point of contact. Each button redirects to a page hosting a distinct login method. Similarly, our dashboard is organised in such a way that every click either redirects the user to another panel or generates a modal or a drop down list. Fairly simple and direct buttons are employed, and if they cannot be easily represented by a symbol, they are shown with their actual names in text.</p>
+
+        <h3>Feedback</h3>
+        <p>Our Dashboard provides human computer interaction feedback to the user in multiple ways. We have implemented features that satisfy user’s need for signals that confirm interaction and communication. For example, when the user logs in using Facebook, we pull recognisable data such as the name of the user and the profile picture and display it on Dashboard and profile of user. This provides the user with the confirmation that the authentication has effectively gone through. To amplify this communication between the user and the service, we have incorporated a greeting notification, using the name of the user. Furthermore, the actions performed on the dashboard translate into different graphs, providing the visual feedback needed by the user.</p>
+
+        <h3>Consistency</h3>
+        <p>Our approach of incorporating consistency in our human computer interaction efforts is reflected in our usage of a wrapper for the content alongside a uniform color scheme throughout the different dashboard pages. There is a consistent format for format, menus, notifications and other fundamental functionalities. We attempt to display as many graphs as possible using the same graph.js library in order to have a consistent responsiveness and homogenous interactions with the data. In addition to this, we placed consistency in our usage of the application logo, as it appears in conjunction with the API’s we make use of for example.</p>
+
+        <h3>Constraints</h3>
+        <p>We have made use of human computer interaction constraints in our application. For example, we intentionally wanted to keep the landing page (or login page) with a very simplistic design and little functionality other than the login buttons. This conveys the exclusive character of the service, but more importantly prevents the user from performing any undesired action before accessing a heavily documented page: the dashboard.</p>
+
+        <p>We’ve also made use of HCI constraints in the profile page of the user, limiting the user’s ability to personalise the service only to a certain extent. This prevents a chaotic and heterogeneous organisation of profiles and identifiers. We wanted the user to be able to change things, but only to a certain extent - hence the usage of a certain number of limited fields.</p>
+
+        <h3>Final Dashboard Design</h3>
+
+        </div>
+      </div>
 
         <!-- Documents Section -->
         <div id = 'documents' class = 'scrollable-page'>

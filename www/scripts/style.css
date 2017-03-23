@@ -55,7 +55,7 @@
 }
 
 .nav-custom .active {
-  background-color: #F85A56;
+  background-color: #986cda;
 }
 
 .scrollable-page {
@@ -87,7 +87,7 @@ body {
   margin: 0px;
 }
 
-#timeline, #technologies, #documents {
+#timeline, #research, #hci {
   background-color: #EEE;
 }
 
