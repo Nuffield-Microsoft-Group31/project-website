@@ -277,14 +277,21 @@
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-xs-12 col-md-8">
+                          <h4>Authorisation</h4>
                           <ul>
                             <li>Implementation of Local Login and Local Sign up</li>
                             <li>Implementation of Facebook Social Login using industry strategy practise (OAuth)</li>
+                          </ul>
+                          <h4>Front-end Design</h4>
+                          <ul>
                             <li>Full front-end dashboard implementation - updated home page and other pages of the dashboard</li>
+                          </ul>
+                          <h4>Back-end</h4>
+                          <ul>
                             <li>DocumentDB NoSQL database integration with the dashboard</li>
                             <li>User profile implementation accordance to the backend architecture</li>
                             <li>Restful API for the skype chat bot to access user data</li>
-                            </ul>
+                          </ul>
                           </div>
                         </div>
                       </div>
@@ -305,14 +312,21 @@
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-xs-12 col-md-8">
+                          <h4>Visualisation</h4>
                           <ul>
                             <li>Implementation of Graph.js for visualisation</li>
                             <li>Pull relevant data from DocumentDB to visualise meaningful graphs</li>
+                          </ul>
+                          <h4>Back-end</h4>
+                          <ul>
                             <li>Connect to GoogleFit and visualise graphs</li>
                             <li>Backend implementation of GoogleFit refresh tokens</li>
                             <li>Finalise backend implementation of messaging queues</li>
+                          </ul>
+                          <h4>Machine Learning</h4>
+                          <ul>
                             <li>Integration of Azure Machine Learning within dashboard</li>
-                            </ul>
+                          </ul>
                           </div>
                         </div>
                       </div>
@@ -562,7 +576,7 @@
 
               <p>For our project we will be using NoSQL database. It will enable us to have rapid analysis of large volumes of different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) isn't designed to address. They are also suitable for retrieving the data and visualisation later on in the project. As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two. Due to our collaboration with Diana we decided to choose and use MongoDB as it seemed the best possible option.</p>
 
-              <p>However, after using MongoDB we realised some of it’s limitations for our project. Since machine learning is one of our elements within this project, we are unable to use MongoDB as the core database choice within Azure. Therefore, we migrated all our data within DocumentDB (another NoSQL database) hosted on Microsoft Azure to resolve the limitations and to also make all of our technology as coherent as possible as we are using many azure services. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a> </p>
+              <p>However, after using MongoDB we realised some of it’s limitations for our project. Since machine learning is one of our elements within this project, we are unable to use MongoDB as the core database choice within Azure. Therefore, we migrated all our data within DocumentDB (another NoSQL database) hosted on Microsoft Azure to resolve the limitations and to also make all of our technology as coherent as possible as we are using many azure services. You can read more about the specifics in <a href='#rdocs'>the Documents section below.</a> </p>
 
               <h3>Messaging Queues and Event Hubs</h3>
 
@@ -572,25 +586,23 @@
 
               <p>Two solutions were proposed. The first one was to use the Event Hubs service which provides most of the specified functionalities. The other one was the Azure Queue, which is a simple message queuing service with lower capabilities and fewer features. Although Event Hubs would be convenient to use, they are designed to hold a bigger amount of messages we could ever expect to be sent through this app. The additional features do not justify their costliness since they can be simulated by e.g. using multiple messaging queues.</p>
 
-              <p>A possible alternative to the Azure Queue implementation would be an open source tool rabbitMQ. While its capabilities are similar to the capabilities of Azure Queue. However, we have decided to use Azure Queues as they are easy to manage within the Azure portal. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>A possible alternative to the Azure Queue implementation would be an open source tool rabbitMQ. While its capabilities are similar to the capabilities of Azure Queue. However, we have decided to use Azure Queues as they are easy to manage within the Azure portal. You can read more about the specifics in <a href='#rdocs'>the Documents section below.</a></p>
 
               <h3>Authentication</h3>
 
-              <p>Authentication is a process that ensures and confirms a user’s identity. Since access control is normally based on the identity of the user who requests access to a resource or a service, authentication is essential to effective security.</p>
+              <p>Authentication is a process that ensures and confirms a user’s identity. Since access control is normally based on the identity of the user who requests access to a resource or a service, authentication is essential to effective security. OAuth is an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications. It is used as a way for Internet users to log in to third party websites through an access token mechanism, using their accounts at Google, Facebook, Microsoft, Twitter, etc.—but without exposing their password.</p> 
 
-              <p>OAuth is an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications. It is used as a way for Internet users to log in to third party websites through an access token mechanism, using their accounts at Google, Facebook, Microsoft, Twitter, etc.—but without exposing their password.</p>
+              <p>In this project we initially intended to use OAuth in conjunction with Azure Active Directory - Microsoft’s multi-tenant cloud based directory and identity management service. It is a powerful identity and access management service (IDaaS) for on-premises and cloud-based apps and provides administrators with the ability to manage end user identities and access privileges</p>
 
-              <p>In this project we use OAuth in conjunction with Azure Active Directory - Microsoft’s multi-tenant cloud based directory and identity management service. It is a powerful identity and access management service (IDaaS) for on-premises and cloud-based apps and provides administrators with the ability to manage end user identities and access privileges.</p>
-
-              <p>In order to use Active Directory, we had to register the application with the service, obtain the application Redirect URI, determine whether we were building a web or native application. A registered application is uniquely identified within the directory. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>By the beginning of second term, we learnt from Microsoft that we didn’t have the necessary Azure subscription to access the desired Active Directory service. We conducted research into the field of authentication and open source OAuth alternatives. Most of our existing application was already written in Node.js. We came across the Passport.js library - an authentication middleware for Node. A diverse set of strategies support authentication using a username and password, enabling login through Facebook or Google and others. It also permits Fitbit integration. We appreciated passport’s modularity and flexibility and ended using this OAuth alternative as a replacement for Active Directory. You can read more about the specifics in<a href='#rdocs'>the Documents section below.</a></p>
 
               <h3>Data Visualisation</h3>
-              <p>An integral part of our project will be based on creation of visualisation for both client and corporate use. Visualisation enables decision makers to see analytics presented visually which makes grasping complex and large data easier. With interactive data visualisation you are able drill down in more specific details that require to find out how they are processed. Furthermore, an attractive data visualisation can help motivate users. It can also help users identify areas that need attention and improvement.</p>
+              <p>An integral part of our project will be based on creation of visualisation for Nuffield Health members to benefit from. Visualisation enables the members to see analytics presented visually which makes grasping complex and large data easier and more meaningful. With interactive data visualisation you are able drill down in more specific details that require to find out how they are processed. Furthermore, an attractive data visualisation can help motivate users. It can also help users identify areas that need attention and improvement.</p>
 
-              <p>To do this we have decided to use the platform D3.js. This is a JavaScript library for manipulating documents based on data. As stated from the D3.js website (d3js.org), “D3's emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combing powerful visualisation components and a data-driven approach to DOM manipulation."  Therefore, D3 is by far the best choice for our application, since it uses a functional style we are able to reuse code and add specific function to our content with great flexibility on the style and the interactive of our data.</p>
+              <p>To do this we have decided to look at two frameworks D3.js and charts.js. Both of these are JavaScript libraries for manipulating documents based on data. Both libraries provide sufficient functionalities for the purpose of our project, however after some investigation we came to the conclusion of using chats.js due to its simple but flexible javascript charting capabilities. Chart.js provides mixed chart types which provides a clear visual distinction between datasets. Additionally, it is animated as well as being interactive which increases the effectiveness of the visualisation.</p>
 
               <h3>Machine Learning</h3>
-              <p>Machine learning was born from pattern matching and based on the theory that computers can learn without being programmed to perform specific tasks. The theory is all about if a machine is able to learn from data that is provided by it using smart algorithms. For this project we will be using the Azure Machine Learning platform and train it using data about gym attendance of Nuffield Health. By doing so we hope to gain useful information where than we can provide to both the clients and corporate users valuable and beneficial information. By building precise models, an organisation such as Nuffield Health Hospital has a better chance of identifying profitable opportunities or avoiding unknown risks. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>Machine learning was born from pattern matching and based on the theory that computers can learn without being programmed to perform specific tasks. The theory is all about if a machine is able to learn from data that is provided by it using smart algorithms. For this project we will be using the Azure Machine Learning platform and train it using data about gym attendance of Nuffield Health. By doing so we hope to gain useful information where than we can provide to both the clients and corporate users valuable and beneficial information. By building precise models, an organisation such as Nuffield Health Hospital has a better chance of identifying profitable opportunities or avoiding unknown risks. You can read more about the specifics in <a href='#rdocs'>the Documents section below.</a></p>
 
               <h3>Testing & Automation</h3>
               <p>We’ve investigated testing tools that are adapted to the technologies we use in our project. A very suitable tool is the Azure Diagnostics functionality. It enables us to monitor requests and connections by gathering data about the activity that is generated. This would let us monitor the performance of the service from a customer perspective, and is also a major source of data for the Corporate version of our product.</p>
