@@ -32,6 +32,7 @@
             <li><a href="#research">Research & Technologies</a></li>
             <li><a href="#experiments">Experiments</a></li>
             <li><a href="#hci">HCI</a></li>
+            <li><a href="design">Design</a></li>
             <li><a href="#documents">Documents</a></li>
           </ul>
         </nav>
@@ -50,6 +51,7 @@
           <li><a href="#research">Research & Technologies</a></li>
           <li><a href="#experiments">Experiments</a></li>
           <li><a href="#hci">HCI</a></li>
+          <li><a href="design">Design</a></li>
           <li><a href="#documents">Documents</a></li>
         </ul>
       </div>
@@ -1184,6 +1186,50 @@
 
         </div>
       </div>
+
+      <!-- Design Section -->
+        <div id = 'design' class = 'scrollable-page'>
+          <div class="container-fluid">
+          <h1>Design</h1>
+
+          <h3>System Architecture</h3>
+          <p>SCREENSHOTS OF OUR ARCHITECTURE AND THEIR DESCRIPTION</p>
+
+          <h3>Design Patterns</h3>
+          <p><b>Design</b> patterns within Computer Science are very important since they allow us to easily maintain and scale software. By using design patterns we are trying to build software that makes sense, is reusable and bug free. The main design patterns we’ve made use of are: Model View Controller, Singleton, Factory, Bridge and Facade. </p>
+
+          <h4>Model View Controller</h4>
+          <p>Our user interface is implemented using the <b>Model View Controller</b> (MVC) pattern, allowing us to incorporate consistency across the various interfaces and efficiently reuse the existing layouts. This pattern is particularly relevant to our product for a number of reasons. We rely on a collection of views as we provide multiple representations of information in the form of a variety of charts and diagrams on our dashboard. Our dashboard and other interfaces are highly interactive, requiring the capabilities of a controller, accepting input and distributing relevant and converted data to the model and view components.</p>
+
+          <h4>Singleton</h4>
+          <p>The passport.js components, such as identification credentials, and the auth.js file are restricted in their instantiation to a single object. This is a manifestation of our usage of the <b>Singleton</b> design pattern, and enables us to coordinate actions across the system more efficiently.</p>
+
+          <h4>Factory</h4>
+          <p>The <b>Factory</b> design pattern is used across our product. For example, our graphs are generated using a common Graph.js framework and a similar dataset structure - rendering a homogeneous data visualisation dashboard. The function we use to create individual messages within the message queues employ a factory pattern as it is used to generate distinct messages from a common base.</p>
+
+          <h4>Facade</h4>
+          <p>The <b>Facade</b> design pattern appears in our routes.js file. This file gathers all the paths and calls to the database in conjunction with our data visualisations into one single component. It effectively makes our code more readable, making it easier to hand over for further development projects. It abstracts from the complexities of the larger numbers of interdependent classes and API’s we make use of, through a simple interface.</p>
+
+          <h3>Developer Tools</h3>
+          <p>We’ve used numerous tools to conduct this project. In addition to using git as our main version control tool and gitHub as our version control repository, we used Microsoft Visual Studio Team Services to facilitate communication through sprints or during integration features and functionalities. We also used it to create backlogs and assign tasks across the team, improving how we operate our incremental agile software development.</p>
+
+          <p>Google Drive was used as our main centralised file storage facility, providing access to all relevant documentation and reports produced and required by all team members. Google Drive was also used to enable our client to easily share relevant datasets with us.</p>
+
+          <p>A large part of our UI is provided by Bootstrap but includes crucial integrations of major API’s such as Google Maps and Facebook Graph (for identity name and profile picture). It also involves javascript libraries such as Graph.js for interactive graphs.</p>
+
+          <p>Our team did not require any specific IDE to conduct development on the project. Therefore, we used our favourite text editors, notably, Sublime Text and Atom.</p>
+
+          <h3>Implementation of Key Functionalities</h3>
+          <h4>Authentication</h4>
+          <p>One of our key functionalities were to implement social login implementation using industry authentication methodologies (OAuth). After having initially worked on an implementation of Azure’s Acive Directory identity management platform, we ended up using an open source tool called passport.js. Passport.js This is an authentication middleware for Node.js, which is what our application is written in. We used multiple passport.js strategies to support authentication using username and password through Facebook or Google.</p>
+
+          <p></p>
+
+          <h4></h4>
+
+          </div>
+        </div>
+
 
         <!-- Documents Section -->
         <div id = 'documents' class = 'scrollable-page'>
