@@ -29,7 +29,7 @@
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#requirements">Requirements</a></li>
-            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#research">Research & Technologies</a></li>
             <li><a href="#experiments">Experiments</a></li>
             <li><a href="#documents">Documents</a></li>
           </ul>
@@ -46,7 +46,7 @@
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#timeline">Timeline</a></li>
           <li><a href="#requirements">Requirements</a></li>
-          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#research">Research & Technologies</a></li>
           <li><a href="#experiments">Experiments</a></li>
           <li><a href="#documents">Documents</a></li>
         </ul>
@@ -101,7 +101,7 @@
             <h2>The Team</h2>
             <div class="row">
 
-              <div class="col-md-4 col-xs-12" style="padding-bottom:20px;">
+              <div class="col-md-4 col-xs-12" style="padding-bottom:10px;">
                 <div class="media">
                   <div class="media-left">
                     <img src="img/mo.jpg" class="media-object" style="width:80px">
@@ -216,7 +216,7 @@
 
               <h2>Requirements</h2>
               <p>Our team has decided to use the Agile software development practice. Agile development excels at reducing risk by creating software in short timeframes. Agile is usually done in iterations or sprints, where each iteration is usually 1-4 weeks long. The intent of these iterations is to develop software and/or features which will have functionality at the end of the short timeframe. Within each iteration, the development life cycle of requirements gathering, design, development, testing and documentation is prepared as if it is treated like a small sub-project. Therefore, we have presented to you an overall view of the general requirements as well as the requirements agreed on during each sprint.</p>
-              
+
               <h3>Overall Requirements</h3>
               <div class="panel-group">
                 <div class="panel panel-default">
@@ -549,20 +549,20 @@
         </div>
 
         <!-- Technologies Section -->
-        <div id='technologies' class = 'scrollable-page'>
+        <div id='research' class = 'scrollable-page'>
           <div class="container-fluid">
-              <h1>Technologies & Research</h1>
+              <h1>Research & Technologies</h1>
               <p>In this section we will be going in depth about the specific research done for the choice of our technolgies and platforms.</p>
 
               <h3>Microsoft Platforms</h3>
               <p>Collaborating with Microsoft has enabled us to use many tools and platforms for our project. We will be using Visual Studio Team Services (VSTS) for our version control alongside other useful features such as measuring and reporting tools. Additionally we will be using Microsoft Azure which enables us to handle most of our back-end systems, such as the implementation of Authorisation, Messaging queue (Azure queue) and database systems. Microsoft Azure will enable us to collaborate closely and makes it easier to link different parts of the project together.  Furthermore, we will be using the Azure Machine Learning platform to perform data analysis as part of our project.</p>
 
               <h3>Database Systems</h3>
-              <p>For Most projects there will always be a requirement of storing and transfer of data and for our project this isn't an exception. We will be storing Fast Healthcare Interoperability Resources (FIHR) messages. It uses JSON or XML for data representation and its goal is to facilitate interoperation between healthcare systems. That way, it is easier to deliver heath care information to healthcare providers and individuals. </p>
+              <p>For Most projects there will always be a requirement of storing and transfer of data. For our project this isn't an exception. We will be storing Fast Healthcare Interoperability Resources (FIHR) messages. It uses JSON or XML for data representation and its goal is to facilitate interoperation between healthcare systems. That way, it is easier to deliver healthcare information to healthcare providers and individuals. </p>
 
-              <p>For our project we will need both an SQL and a NoSQL database. We will be using a SQL database from Azure to store all the information of clients and to be able to easily access this data for visualisation. However, a NoSQL database is also required. It will enable us to have rapid analysis of large volumes of different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) isn't designed to address.</p>
+              <p>For our project we will be using NoSQL database. It will enable us to have rapid analysis of large volumes of different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) isn't designed to address. They are also suitable for retrieving the data and visualisation later on in the project. As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two. Due to our collaboration with Diana we decided to choose and use MongoDB as it seemed the best possible option.</p>
 
-              <p>As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two. The differences, such as one being "Column-based" and the other "Document-based" lead to a conclusion of which would be the most suitable for our development. In the end we decided to proceed with MongoDB as it had clear advantages which specifically addressed our needs and it gave us the flexibility of launching MongoDB on Azure. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>However, after using MongoDB we realised some of it’s limitations for our project. Since machine learning is one of our elements within this project, we are unable to use MongoDB as the core database choice within Azure. Therefore, we migrated all our data within DocumentDB (another NoSQL database) hosted on Microsoft Azure to resolve the limitations and to also make all of our technology as coherent as possible as we are using many azure services. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a> </p>
 
               <h3>Messaging Queues and Event Hubs</h3>
 
