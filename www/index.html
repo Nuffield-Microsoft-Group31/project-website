@@ -33,6 +33,8 @@
             <li><a href="#experiments">Experiments</a></li>
             <li><a href="#hci">HCI</a></li>
             <li><a href="#design">Design</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#evaluation">Evaluation</a></li>
             <li><a href="#documents">Documents</a></li>
           </ul>
         </nav>
@@ -52,6 +54,8 @@
           <li><a href="#experiments">Experiments</a></li>
           <li><a href="#hci">HCI</a></li>
           <li><a href="#design">Design</a></li>
+          <li><a href="#testing">Testing</a></li>
+          <li><a href="#evaluation">Evaluation</a></li>
           <li><a href="#documents">Documents</a></li>
         </ul>
       </div>
@@ -1180,10 +1184,64 @@
         <h3>Constraints</h3>
         <p>We have made use of human computer interaction constraints in our application. For example, we intentionally wanted to keep the landing page (or login page) with a very simplistic design and little functionality other than the login buttons. This conveys the exclusive character of the service, but more importantly prevents the user from performing any undesired action before accessing a heavily documented page: the dashboard.</p>
 
-        <p>We’ve also made use of HCI constraints in the profile page of the user, limiting the user’s ability to personalise the service only to a certain extent. This prevents a chaotic and heterogeneous organisation of profiles and identifiers. We wanted the user to be able to change things, but only to a certain extent - hence the usage of a certain number of limited fields.</p>
+        <p>We have also made use of HCI constraints in the profile page of the user, limiting the user’s ability to personalise the service only to a certain extent. This prevents a chaotic and heterogeneous organisation of profiles and identifiers. We wanted the user to be able to change things, but only to a certain extent - hence the usage of a certain number of limited fields.</p>
 
         <h3>Final Dashboard Design</h3>
 
+        <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="img/HomePage.png">
+                  <img src="img/HomePage.png" style="width:100%">
+                  <div class="caption">
+                      <p>Homepage of Transpire, includes social login as well as local login</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/Dashboard.png">
+                    <img src="img/Dashboard.png" style="width:100%">
+                    <div class="caption">
+                      <p>Dashboard visualising relevant user data using Graph.js</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/userdata.png">
+                    <img src="img/userdata.png" style="width:100%">
+                    <div class="caption">
+                      <p>Customizable user profile page</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/SharingData.png">
+                    <img src="img/SharingData.png" style="width:100%">
+                    <div class="caption">
+                      <p>User data sharing page</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/maps.png">
+                    <img src="img/maps.png" style="width:100%">
+                    <div class="caption">
+                      <p>Maps showing all of Nuffield Health London Gym Locations</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+           </div>
         </div>
       </div>
 
@@ -1193,7 +1251,7 @@
           <h1>Design</h1>
 
           <h3>System Architecture</h3>
-          <p>SCREENSHOTS OF OUR ARCHITECTURE AND THEIR DESCRIPTION</p>
+          <p>To view a full system architecture please refer to <a href='#rdocs'>the Documents section below.</a></p></p>
 
           <h3>Design Patterns</h3>
           <p><b>Design</b> patterns within Computer Science are very important since they allow us to easily maintain and scale software. By using design patterns we are trying to build software that makes sense, is reusable and bug free. The main design patterns we’ve made use of are: Model View Controller, Singleton, Factory, Bridge and Facade. </p>
@@ -1211,21 +1269,53 @@
           <p>The <b>Facade</b> design pattern appears in our routes.js file. This file gathers all the paths and calls to the database in conjunction with our data visualisations into one single component. It effectively makes our code more readable, making it easier to hand over for further development projects. It abstracts from the complexities of the larger numbers of interdependent classes and API’s we make use of, through a simple interface.</p>
 
           <h3>Developer Tools</h3>
-          <p>We’ve used numerous tools to conduct this project. In addition to using git as our main version control tool and gitHub as our version control repository, we used Microsoft Visual Studio Team Services to facilitate communication through sprints or during integration features and functionalities. We also used it to create backlogs and assign tasks across the team, improving how we operate our incremental agile software development.</p>
+          <p>We have used numerous tools to conduct this project. In addition to using git as our main version control tool and gitHub as our version control repository, we used Microsoft Visual Studio Team Services to facilitate communication through sprints or during integration features and functionalities. We also used it to create backlogs and assign tasks across the team, improving how we operate our incremental agile software development.</p>
 
           <p>Google Drive was used as our main centralised file storage facility, providing access to all relevant documentation and reports produced and required by all team members. Google Drive was also used to enable our client to easily share relevant datasets with us.</p>
 
-          <p>A large part of our UI is provided by Bootstrap but includes crucial integrations of major API’s such as Google Maps and Facebook Graph (for identity name and profile picture). It also involves javascript libraries such as Graph.js for interactive graphs.</p>
+          <p>A large part of our UI is provided by Bootstrap but includes crucial integrations of major APIs such as Google Maps and Facebook Graph (for identity name and profile picture). It also involves javascript libraries such as Graph.js for interactive graphs.</p>
 
           <p>Our team did not require any specific IDE to conduct development on the project. Therefore, we used our favourite text editors, notably, Sublime Text and Atom.</p>
 
           <h3>Implementation of Key Functionalities</h3>
           <h4>Authentication</h4>
-          <p>One of our key functionalities were to implement social login implementation using industry authentication methodologies (OAuth). After having initially worked on an implementation of Azure’s Acive Directory identity management platform, we ended up using an open source tool called passport.js. Passport.js This is an authentication middleware for Node.js, which is what our application is written in. We used multiple passport.js strategies to support authentication using username and password through Facebook or Google.</p>
+          <p>One of our key functionalities were to implement social login implementation using industry authentication methodologies (OAuth). After having initially worked on an implementation of Azures Acive Directory identity management platform, we ended up using an open source tool called passport.js. Passport.js This is an authentication middleware for Node.js, which is what our application is written in. We used multiple passport.js strategies to support authentication using username and password through Facebook or Google.</p>
 
-          <p></p>
+          <p>We were required to follow the standard OAuth protocol from the start of the project, allowing users to authorize API access applications. This is supported by Passport. Implementing secure login required registering our Nuffield application with the various APIs (Google, Facebook), to obtain tokens and identifiers. Using Passport essentially allowed us to issue access tokens to third-party clients by</p>
 
-          <h4></h4>
+          <p><b><i>OAuth essentially allows access tokens to be issued to third-party clients by an authorization server, with the approval of the resource owner. The third party then uses the access token to access the protected resources hosted by the resource server.</i></b></p>
+
+          <h4>Visualisation</h4>
+          <p>Similarly to the authentication implementation, this functionality has been subject to change during the course of the project. We had initially set out to use D3.js -  a highly sophisticated JavaScript library for producing dynamic, interactive data visualizations in web browsers.</p>
+
+          <p>However, after several meetings with the client we concluded using another JavaScript library which seemed more appropriate for our use. Therefore, for our visualisation we used Graph.js which provided us customizable graphs within different sectors, great colour schemes as well as interactivity of our data. Furthermore, the library is very easy to use and well documented which makes it a lot user friendly when the project is passed on to continue for further development.</p>
+
+          <h4>Machine Learning</h4>
+          <p>During the development process of this project our team decided to using Microsoft's Azure Machine Learning to further advance the purpose of the project. We developed multiple Poisson Regression models called the "6 week models", based on Nuffield Health gym swipe data of their clients. By modularising and cleaning the data we trained the model to predict when it is likely a member is going to quit or cancel their membership. The models are ready to deploy, however, due to the lack of data the prediction model has not yet been implemented within the dashboard. However, for future purposes the platform is designed in such a way where integration of our current model will be easy to combine.</p>
+
+          <h4>Messaging Queue</h4>
+          <p>To be completed</p>
+
+          <h4>Health Data Sharing</h4>
+          <p>A key functionality and aim of this project has been to allow Transpire users to share their data with their permission securely. Our aim has been to create a health ecosystem to provide different users to feel empowered when they are sharing their data. This is done by creating engaging dashboards representing how their data can be shown to them in a meaningful way as well as partnering with trust worthy organisations where share of data is done to help research within specific fields.</p>
+
+          <p>As well as integrating specific Nuffield Health member data, our team has also integrated a GoogleFit data collection. This is done so that if the user has been using other third party mediums to record and monitor their health, they are also given the opportunity to view the relevant data on their Transpire dashboard. GoogleFit was implemented using the GoogleFit API and the Nuffield Health member data has been collected within our secure DocumentDB database on Azure and queried to be displayed on the dashboards.</p>
+
+          </div>
+        </div>
+
+        <!-- Testing Section -->
+        <div id='testing' class='scrollable-page'>
+          <div class="container-fluid">
+          <h1>Testing</h1>
+
+          </div>
+        </div>
+
+        <!-- Evaluation Section -->
+        <div id='evaluation' class='scrollable-page'>
+          <div class="container-fluid">
+          <h1>Evaluation</h1>
 
           </div>
         </div>
@@ -1344,7 +1434,6 @@
             </div>
           </div>
         </div>
-
 
         <!-- END OF SECTIONS -->
       </div>
