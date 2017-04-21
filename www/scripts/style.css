@@ -82,7 +82,7 @@ body {
   font-size: 40px;
   background: none;
   border: none;
-  color: #F85A56;
+  color: #986cda;
   padding: 0px;
   margin: 0px;
 }
@@ -141,7 +141,7 @@ img.opacity:hover {
 }
 
 .done {
-  background-color: #F85A56;
+  background-color: #986cda;
 }
 
 .imfit {
