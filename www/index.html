@@ -238,33 +238,109 @@
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-xs-12 col-md-8">
-                            <h4>Authorisation</h4>
-                            <ul>
-                              <li>User Login using social media identity</li>
-                              <li>Identify of user links with third party identity </li>
-                              <li>Selection of subscribes to share data with</li>
-                            </ul>
-                            <h4>Messaging Queue</h4>
-                            <ul>
-                              <li>Message queuing system implementation to integrate all components</li>
-                              <li>Subscriber able to pull only appropriate messages</li>
-                              <li>Unauthorised publisher unable to publish message</li>
-                              <li>Queues capacity large enough to handle large amount of messages</li>
-                            </ul>
-                            <h4>Data Storage</h4>
-                            <ul>
-                              <li>User data stored in NoSQL database automatically as messages are published into the queue</li>
-                              <li>Data Visualisation from data stored</li>
-                              <li>Machine Learning on specific data</li>
-                            </ul>
-                            <h4>Dashboard</h4>
-                            <ul>
-                              <li>Interactive dashboard visualising health data for Nuffield Health clients</li>
-                              <li>User able to specify personal goals </li>
-                              <li>Relevant interactive data displayed in a motivational way for customers</li>
-                              <li>Tailored bespoke notification targeted at clients in relation to their initial objectives and their current progression using machine learning </li>
-                            </ul>
-                          </div>
+                          <div class="container">
+                          <table class="table table-striped">
+                          <h4><b>Authorisation</b></h4>
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>AUTH1</td>
+						        <td>User Login using social media identity</td>
+						      </tr>
+						      <tr>
+						        <td>AUTH2</td>
+						        <td>Identify of user links with third party identity</td>
+						      </tr>
+						      <tr>
+						        <td>AUTH3</td>
+						        <td>Selection of subscribes to share data with</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						  <table class="table table-striped">
+                		  <h4><b>Messaging Queue</b></h4>
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>MQ1</td>
+						        <td>Message queuing system implementation to integrate all components</td>
+						      </tr>
+						      <tr>
+						        <td>MQ2</td>
+						        <td>Subscriber able to pull only appropriate messages</td>
+						      </tr>
+						      <tr>
+						        <td>MQ3</td>
+						        <td>Unauthorised publisher unable to publish message</td>
+						      </tr>
+						      <tr>
+						      	<td>MQ4</td>
+						      	<td>Queues capacity large enough to handle large amount of messages</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						  <table class="table table-striped">
+                		  <h4><b>Data Storage</b></h4>
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>DB1</td>
+						        <td>User data stored in NoSQL database automatically as messages are published into the queue</td>
+						      </tr>
+						      <tr>
+						        <td>DB2</td>
+						        <td>Data Visualisation from data stored</td>
+						      </tr>
+						      <tr>
+						        <td>DB3</td>
+						        <td>Machine Learning on specific data</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						  <table class="table table-striped">
+                		  <h4><b>Dashboard</b></h4>
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>DASH1</td>
+						        <td>Interactive dashboard visualising health data for Nuffield Health clients</td>
+						      </tr>
+						      <tr>
+						        <td>DASH2</td>
+						        <td>User able to specify personal goals</td>
+						      </tr>
+						      <tr>
+						        <td>DASH3</td>
+						        <td>Relevant interactive data displayed in a motivational way for customers</td>
+						      </tr>
+						      <tr>
+						      	<td>DASH4</td>
+						      	<td>Tailored bespoke notification targeted at clients in relation to their initial objectives and their current progression using machine learning</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						</div>
+						</div>
                         </div>
                       </div>
                     </div>
@@ -285,21 +361,56 @@
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-xs-12 col-md-8">
-                          <h4>Authorisation</h4>
-                          <ul>
-                            <li>Implementation of Local Login and Local Sign up</li>
-                            <li>Implementation of Facebook Social Login using industry strategy practise (OAuth)</li>
-                          </ul>
-                          <h4>Front-end Design</h4>
-                          <ul>
-                            <li>Full front-end dashboard implementation - updated home page and other pages of the dashboard</li>
-                          </ul>
-                          <h4>Back-end</h4>
-                          <ul>
-                            <li>DocumentDB NoSQL database integration with the dashboard</li>
-                            <li>User profile implementation accordance to the backend architecture</li>
-                            <li>Restful API for the skype chat bot to access user data</li>
-                          </ul>
+                          <div class="container">
+                          <table class="table table-striped">
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						        <th>Priority</th>
+						        <th>State</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>AUTH1</td>
+						        <td>Implementation of Local Login and Local Sign up</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>AUTH2</td>
+						        <td>Implementation of Facebook Social Login using industry strategy practise (OAuth)</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>FED1</td>
+						        <td>Full front-end dashboard implementation - updated home page and other pages of the dashboard</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>BAK1</td>
+						      	<td>DocumentDB NoSQL database integration with the dashboard</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>BAK2</td>
+						      	<td>User profile implementation accordance to the backend architecture</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>BAK3</td>
+						      	<td>Restful API for the skype chat bot to access user data</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>						      
+						    </tbody>
+						  </table>
+						  </div>
                           </div>
                         </div>
                       </div>
@@ -320,21 +431,56 @@
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-xs-12 col-md-8">
-                          <h4>Visualisation</h4>
-                          <ul>
-                            <li>Implementation of Graph.js for visualisation</li>
-                            <li>Pull relevant data from DocumentDB to visualise meaningful graphs</li>
-                          </ul>
-                          <h4>Back-end</h4>
-                          <ul>
-                            <li>Connect to GoogleFit and visualise graphs</li>
-                            <li>Backend implementation of GoogleFit refresh tokens</li>
-                            <li>Finalise backend implementation of messaging queues</li>
-                          </ul>
-                          <h4>Machine Learning</h4>
-                          <ul>
-                            <li>Integration of Azure Machine Learning within dashboard</li>
-                          </ul>
+                          <div class="container">
+                          <table class="table table-striped">
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						        <th>Priority</th>
+						        <th>State</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>VIS1</td>
+						        <td>Implementation of Graph.js for visualisation</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>VIS2</td>
+						        <td>Pull relevant data from DocumentDB to visualise meaningful graphs</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>BAK1</td>
+						        <td>Connect to GoogleFit and visualise graphs (Back-end)</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>BAK2</td>
+						      	<td>Backend implementation of GoogleFit refresh tokens</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>BAK3</td>
+						      	<td>Finalise backend implementation of messaging queues</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>ML1</td>
+						      	<td>Integration of Azure Machine Learning within dashboard</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						  </div>
                           </div>
                         </div>
                       </div>
@@ -342,6 +488,154 @@
                   </div>
                 </div>
               </div>
+
+              <h3>Functional Requirements</h3>
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#req04"><span class="glyphicon glyphicon-record green"></span> Completed set of all functional requirements</a>
+                    </h4>
+                  </div>
+                  <div id="req04" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-8">
+                          <div class="container">
+						  <table class="table table-striped">
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						        <th>Priority</th>
+						        <th>State</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>1</td>
+						        <td>Implementation of multiple Messaging Queues</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>2</td>
+						        <td>Implementation of Publisher-Consumer RESTful API mechanism</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>3</td>
+						        <td>User login using social identity</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>4</td>
+						      	<td>Nuffield Dashboard</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>5</td>
+						      	<td>User data storage</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>6</td>
+						      	<td>Machine Learning Modelling</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>7</td>
+						      	<td>Machine Learning integration</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>8</td>
+						      	<td>Visualisation of data</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>9</td>
+						      	<td>Integration with Skype Chat Bot</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						</div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+
+              <h3>Non-Functional Requirements</h3>
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#req05"><span class="glyphicon glyphicon-record green"></span> Completed set of all non-functional requirements</a>
+                    </h4>
+                  </div>
+                  <div id="req05" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-8">
+                          <div class="container">
+						  <table class="table table-striped">
+						    <thead>
+						      <tr>
+						        <th>ID</th>
+						        <th>Requirement</th>
+						        <th>Priority</th>
+						        <th>State</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>1</td>
+						        <td>Use well established frameworks</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>2</td>
+						        <td>Use Microsoft Azure (if possible)</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						        <td>3</td>
+						        <td>Use secure practices for development</td>
+						        <td>MUST</td>
+						        <td>Success</td>
+						      </tr>
+						      <tr>
+						      	<td>4</td>
+						      	<td>Deploy the system to be accessible live</td>
+						      	<td>MUST</td>
+						      	<td>Success</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>           
 
               <h2>Personas</h2>
               <h3>George Williams</h3>
