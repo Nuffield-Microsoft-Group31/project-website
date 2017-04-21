@@ -28,10 +28,14 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#specification">Specification</a></li>
-            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#research">Research & Technologies</a></li>
             <li><a href="#experiments">Experiments</a></li>
-            <li><a href="#documents">Documents</a></li>
+            <li><a href="#hci">HCI</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#evaluation">Evaluation</a></li>
+            <li><a href="#documentsManagement">Documents & Management</a></li>
           </ul>
         </nav>
       </div>
@@ -45,10 +49,14 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#specification">Specification</a></li>
-          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#research">Research & Technologies</a></li>
           <li><a href="#experiments">Experiments</a></li>
-          <li><a href="#documents">Documents</a></li>
+          <li><a href="#hci">HCI</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#testing">Testing</a></li>
+          <li><a href="#evaluation">Evaluation</a></li>
+          <li><a href="#documentsManagement">Documents & Management</a></li>
         </ul>
       </div>
     </div>
@@ -64,8 +72,8 @@
         <!-- Home Section -->
         <div id='home'>
           <div class="container-fluid" id='home-container'>
-              <img src = 'img/logo.png'>
-              <h1 class='white-text'>UCL Active Health and Lifestyle Record</h1>
+              <img src = 'img/transpireLogoWeb.png' width=30%; height=30%>
+              <!-- <h1 class='white-text'>Transpire</h1> -->
               <h2 class='white-text'>Team 31 Project Website</h2>
           </div>
         </div>
@@ -75,20 +83,29 @@
         <div id = 'introduction' class = 'scrollable-page'>
           <div class="container-fluid">
             <h1>Introduction</h1>
-            <p>UCL Active is a platform developed by UCL that will collect data, process it and share it. Our team is working on dashboards for both corporate and personal users that will display their acheivements and plans. It will also use machine learning to give accurate predictions for reaching goals set by the user.</p>
-            <h2>Background and Context</h2>
-            <p>We will be working in collaboration with Nuffield Health Hospital and Microsoft. Nuffield Health Hospital is a private health centre which provides variety of services such as Physiotherapy, Health Assessments, Emotional Wellbeing and even Gym facilities. We will be equipped and fully supported by Microsoft to deliver additional and innovative services to Nuffield Health's clients and professionals. Furthermore, we will be working closely with the Digital Assistance team and Diana a 3rd year Computer Science student to deliver the final product. </p>
-            <p>The project will be split into two phases. Phase one of the project will be dedicated to creation of requirements and research, identifying strategies and the correct technologies, development of R&D experiments, architecture designs, development of experiments that will lead to our PoC design(s) and to build one or more prototypes. The second phase will largely be based on implementation and the core development of the functionalities of the platform.</p>
-            <p>The initial problem that we are tackling is to be able to create a user friendly and informative data visualisation both for Nuffield Health clients and their professionals to. The platform for their clients will consist of interactive and attractive visualisation of their own data to help them make better and more informative decisions for their lifestyle. Additionally, we would like the system to give recommendations to the users to improve their health. The platform for the professional will consist of data visualisation of all the relevant information of their clients, to spot trends and tendencies to make their services even better. Furthermore, we will be using Machine Learning with the help of Microsoft to perform analysis based on gym attendance to improve the attendance of their clients. </p>
-            <h2>Clients</h2>
-            <div class="row">
-              <div class="col-md-2 col-xs-6 col-sm-4">
-                <img src = 'img/nuffield.png' style="width:100%" alt="" class="opacity">
+            <p>Transpire is a platform developed by UCL second year Computer Science students that will collect data, process it and share it. Our team is working on an interactive dashboard for Nuffield Health clients that will display their health data and goals in a motivational and interactive manner. We will also be using machine learning to predict the user’s performances and so create meaningful notifications which will aid the user towards their set goals.</p>
+
+            <p>The initial problem that we are tackling is to be able to create a user friendly and informative data visualisation for Nuffield Health clients and to be able to share these data to third party platforms. Our goal is to create a health platform ecosystem to encourage sharing of data to convey a positive change for the clients and researchers. The platform for clients will consist of interactive and attractive visualisation of their own data to help them make better and more informative decisions for their lifestyle. Additionally, we would like the system to give recommendations to the users to improve their health and lifestyle. Additionally, we will be using Machine Learning using Microsoft’s Azure Machine Learning platform to perform analysis based on gym attendance to improve the attendance of their clients.<p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Social and local login implementation using industry authentication methodologies (OAuth)</li>
+                <li>Interactive, beautiful and meaningful data visualisation</li>
+                <li>Ecosystem of sharing health securely to third party organisations such as OpenMRS</li>
+                <li>Customizable profile page as well as interactive showcase of maps of Nuffield Health Gyms</li>
+                <li>Machine Learning to predict user actions to improve their health and lifestyle</li>
+            </ul>
+
+              <h2>Clients</h2>
+              <div class="row">
+                <div class="col-md-2 col-xs-6 col-sm-4">
+                  <img src = 'img/nuffield.png' style="width:100%" class="opacity">
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-4">
+                  <img src = 'img/microsoft.jpg' style="width:100%" class="opacity">
+                </div>
               </div>
-              <div class="col-md-2 col-xs-6 col-sm-4">
-                <img src = 'img/microsoft.jpg' style="width:100%" alt="" class="opacity">
-              </div>
-            </div>
+
             <h2>The Team</h2>
             <div class="row">
 
@@ -100,7 +117,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Mo</h4>
                     <h5>Chief Researcher, Technical Lead</h5>
-                    <p>Responsible for data storage</p>
+                    <a href="mailto:mo.afsharmoqaddam.15@ucl.ac.uk">mo.afsharmoqaddam.15@ucl.ac.uk</a>
                   </div>
                 </div>
               </div>
@@ -113,7 +130,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Marc</h4>
                     <h5>Chief Editor, Deputy Team leader</h5>
-                    <p>Responsible for identity</p>
+                    <a href="marc.fontenay.15@ucl.ac.uk">marc.fontenay.15@ucl.ac.uk</a>
                   </div>
                 </div>
               </div>
@@ -126,7 +143,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">Jas</h4>
                     <h5>Team Leader, Client Liason</h5>
-                    <p>Responsible for data queueing</p>
+                    <a href="jas.semrl.15@ucl.ac.uk">jas.semrl.15@ucl.ac.uk</a>
                   </div>
                 </div>
               </div>
@@ -165,7 +182,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="timeline"></td>
+                  <td class="timeline done"></td>
                   <td><div class= "anchor done"></div><td>
                   <td>
                       <h2>PoC and Prototyping</h2>
@@ -173,11 +190,19 @@
                   </td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td><div class= "anchor"></div><td>
+                  <td class="timeline"></td>
+                  <td><div class= "anchor done"></div><td>
                   <td>
                       <h2>Development</h2>
                       <p>The Development stage will be mostly developed through second phase of the project. After completion of the prototyping stage we will start developing the core functionalities of the platform, such as the development of the dashboards alongside the interactive visualisation and machine learning implementations.</p>
+                  </td>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td><div class= "anchor"></div><td>
+                  <td>
+                      <h2>Future Steps</h2>
+                      <p>Add Future Steps: For the future of this project the aim is to gather more health data from Nuffield Health Clients through many different devices which can then be used to display more useful information. Additionally, more complex machine learning models can be built to predict further user needs</p>
                   </td>
                 </tr>
               </table>
@@ -185,38 +210,138 @@
         </div>
 
         <!-- Specificiation Section -->
-        <div id='specification' class = 'scrollable-page'>
+        <div id='requirements' class = 'scrollable-page'>
           <div class="container-fluid">
-              <h1>Specification</h1>
-              <p>Our team has decided to use the Agile software development practice. Agile development excels at reducing risk by creating software in short timeframes. Agile is usually done in iterations or sprints, where each iteration is usually 1-4 weeks long. The intent of these iterations is to develop software and/or features which will have functionality at the end of the short timeframe. Within each iteration, the development life cycle of requirements gathering, design, development, testing and documentation is prepared as if it is treated like a small sub-project. Because of these decisions, only an overall set of requirements will be presented bellow, rather than specific in-depth details. Those will be agreed on at every sprint.</p>
-              <h2>Requirements</h2>
-              <h4>Authorisation</h4>
-              <ul>
-                <li>User Login using social media identity</li>
-                <li>Identify of user links with third party identity </li>
-                <li>Selection of subscribes to share data with</li>
-              </ul>
-              <h4>Messaging Queue</h4>
-              <ul>
-                <li>Message queuing system implementation to integrate all components</li>
-                <li>Subscriber able to pull only appropriate messages</li>
-                <li>Unauthorised publisher unable to publish message</li>
-                <li>Queues capacity large enough to handle large amount of messages</li>
-              </ul>
-              <h4>Data Storage</h4>
-              <ul>
-                <li>User data stored in NoSQL database automatically as messages are published into the queue</li>
-                <li>Data Visualisation from data stored</li>
-                <li>Machine Learning on specific data</li>
-              </ul>
-              <h4>Dashboard</h4>
-              <ul>
-                <li>Two dashboards, one for customers and one for corporate</li>
-                <li>User able to specify goals either corporate or personal </li>
-                <li>Relevant interactive data displayed in a motivational way for customers</li>
-                <li>Relevant interactive data displayed in an informative way for corporate use and decision making</li>
-                <li>Tailored bespoke notification targeted at clients in relation to their initial objectives and their current progression using machine learning </li>
-              </ul>
+              <h1>Background and Context</h1>
+              <p>We will be working in collaboration with Nuffield Health Hospital and Microsoft. Nuffield Health is a private health centre which provides variety of services such as Physiotherapy, Health Assessments, Emotional Well Being and even Gym facilities. We will be equipped and fully supported by Microsoft to deliver additional and innovative services to Nuffield Health's clients and professionals. Furthermore, we will be working closely with the Digital Assistance team and Diana a third year Computer Science student to deliver the final product.</p>
+
+              <p>The project will be split into two phases. Phase one of the project will be dedicated to creation of requirements and research, identifying strategies and the correct technologies, development of R&D experiments, architecture designs, development of experiments that will lead to our PoC design(s) and to build one or more prototypes. The second phase will largely be based on implementation and the core development of the functionalities of the platform as well as creating a solid documentation and the future plans of the project.</p>
+
+              <h3>Requirement Gathering</h3>
+              <p>For this specific project our team decided to use a range of variety of requirement gathering techniques. Initially and throughout the project we held multiple Interview and meetings with our client to gather and create suitable goals and requirements. This is due to our project consisting of heavy backend and heavy front-end segments. Therefore, we needed to arrange multiple interviews to agree on the backend architecture as well as the front-end design of the system.</p>
+
+              <p>Additionally, another method of gathering data was through prototyping. By opting for the agile approach, we continually created prototypes and features throughout our sprints of the system and held meetings with the client to gather feedback. Moreover, we held multiple brainstorming sessions to utilise our requirements during each sprint in the best way possible.</p>
+
+              <h3>Requirements</h3>
+              <p>Our team has decided to use the Agile software development practice. Agile development excels at reducing risk by creating software in short timeframes. Agile is usually done in iterations or sprints, where each iteration is usually 1-4 weeks long. The intent of these iterations is to develop software and/or features which will have functionality at the end of the short timeframe. Within each iteration, the development life cycle of requirements gathering, design, development, testing and documentation is prepared as if it is treated like a small sub-project. Therefore, we have presented to you an overall view of the general requirements as well as the requirements agreed on during each sprint.</p>
+
+              <h3>Overall Requirements</h3>
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#req01"><span class="glyphicon glyphicon-record green"></span> Overall and General requirements</a>
+                    </h4>
+                  </div>
+                  <div id="req01" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-8">
+                            <h4>Authorisation</h4>
+                            <ul>
+                              <li>User Login using social media identity</li>
+                              <li>Identify of user links with third party identity </li>
+                              <li>Selection of subscribes to share data with</li>
+                            </ul>
+                            <h4>Messaging Queue</h4>
+                            <ul>
+                              <li>Message queuing system implementation to integrate all components</li>
+                              <li>Subscriber able to pull only appropriate messages</li>
+                              <li>Unauthorised publisher unable to publish message</li>
+                              <li>Queues capacity large enough to handle large amount of messages</li>
+                            </ul>
+                            <h4>Data Storage</h4>
+                            <ul>
+                              <li>User data stored in NoSQL database automatically as messages are published into the queue</li>
+                              <li>Data Visualisation from data stored</li>
+                              <li>Machine Learning on specific data</li>
+                            </ul>
+                            <h4>Dashboard</h4>
+                            <ul>
+                              <li>Interactive dashboard visualising health data for Nuffield Health clients</li>
+                              <li>User able to specify personal goals </li>
+                              <li>Relevant interactive data displayed in a motivational way for customers</li>
+                              <li>Tailored bespoke notification targeted at clients in relation to their initial objectives and their current progression using machine learning </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Sprint Requirements</h3>
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#req02"><span class="glyphicon glyphicon-record green"></span> First sprint (2 weeks) - Requirements </a>
+                    </h4>
+                  </div>
+                  <div id="req02" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-8">
+                          <h4>Authorisation</h4>
+                          <ul>
+                            <li>Implementation of Local Login and Local Sign up</li>
+                            <li>Implementation of Facebook Social Login using industry strategy practise (OAuth)</li>
+                          </ul>
+                          <h4>Front-end Design</h4>
+                          <ul>
+                            <li>Full front-end dashboard implementation - updated home page and other pages of the dashboard</li>
+                          </ul>
+                          <h4>Back-end</h4>
+                          <ul>
+                            <li>DocumentDB NoSQL database integration with the dashboard</li>
+                            <li>User profile implementation accordance to the backend architecture</li>
+                            <li>Restful API for the skype chat bot to access user data</li>
+                          </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#req03"><span class="glyphicon glyphicon-record green"></span> Second sprint (2 weeks) - Requirements </a>
+                    </h4>
+                  </div>
+                  <div id="req03" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-8">
+                          <h4>Visualisation</h4>
+                          <ul>
+                            <li>Implementation of Graph.js for visualisation</li>
+                            <li>Pull relevant data from DocumentDB to visualise meaningful graphs</li>
+                          </ul>
+                          <h4>Back-end</h4>
+                          <ul>
+                            <li>Connect to GoogleFit and visualise graphs</li>
+                            <li>Backend implementation of GoogleFit refresh tokens</li>
+                            <li>Finalise backend implementation of messaging queues</li>
+                          </ul>
+                          <h4>Machine Learning</h4>
+                          <ul>
+                            <li>Integration of Azure Machine Learning within dashboard</li>
+                          </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <h2>Personas</h2>
               <h3>George Williams</h3>
@@ -446,20 +571,20 @@
         </div>
 
         <!-- Technologies Section -->
-        <div id='technologies' class = 'scrollable-page'>
+        <div id='research' class = 'scrollable-page'>
           <div class="container-fluid">
-              <h1>Technologies & Research</h1>
+              <h1>Research & Technologies</h1>
               <p>In this section we will be going in depth about the specific research done for the choice of our technolgies and platforms.</p>
 
               <h3>Microsoft Platforms</h3>
               <p>Collaborating with Microsoft has enabled us to use many tools and platforms for our project. We will be using Visual Studio Team Services (VSTS) for our version control alongside other useful features such as measuring and reporting tools. Additionally we will be using Microsoft Azure which enables us to handle most of our back-end systems, such as the implementation of Authorisation, Messaging queue (Azure queue) and database systems. Microsoft Azure will enable us to collaborate closely and makes it easier to link different parts of the project together.  Furthermore, we will be using the Azure Machine Learning platform to perform data analysis as part of our project.</p>
 
               <h3>Database Systems</h3>
-              <p>For Most projects there will always be a requirement of storing and transfer of data and for our project this isn't an exception. We will be storing Fast Healthcare Interoperability Resources (FIHR) messages. It uses JSON or XML for data representation and its goal is to facilitate interoperation between healthcare systems. That way, it is easier to deliver heath care information to healthcare providers and individuals. </p>
+              <p>For Most projects there will always be a requirement of storing and transfer of data. For our project this isn't an exception. We will be storing Fast Healthcare Interoperability Resources (FIHR) messages. It uses JSON or XML for data representation and its goal is to facilitate interoperation between healthcare systems. That way, it is easier to deliver healthcare information to healthcare providers and individuals. </p>
 
-              <p>For our project we will need both an SQL and a NoSQL database. We will be using a SQL database from Azure to store all the information of clients and to be able to easily access this data for visualisation. However, a NoSQL database is also required. It will enable us to have rapid analysis of large volumes of different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) isn't designed to address.</p>
+              <p>For our project we will be using NoSQL database. It will enable us to have rapid analysis of large volumes of different data types. They provide scalability, availability and fault tolerance which seek to solve big data performance issues that a relational databases (SQL) isn't designed to address. They are also suitable for retrieving the data and visualisation later on in the project. As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two. Due to our collaboration with Diana we decided to choose and use MongoDB as it seemed the best possible option.</p>
 
-              <p>As there are many options for database choices we researched the two most popular NoSQL options, MongoDB and Cassandra. We researched the advantages and disadvantages of the two. The differences, such as one being "Column-based" and the other "Document-based" lead to a conclusion of which would be the most suitable for our development. In the end we decided to proceed with MongoDB as it had clear advantages which specifically addressed our needs and it gave us the flexibility of launching MongoDB on Azure. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>However, after using MongoDB we realised some of it’s limitations for our project. Since machine learning is one of our elements within this project, we are unable to use MongoDB as the core database choice within Azure. Therefore, we migrated all our data within DocumentDB (another NoSQL database) hosted on Microsoft Azure to resolve the limitations and to also make all of our technology as coherent as possible as we are using many azure services. You can read more about the specifics in <a href='#rdocs'>the Documents section below.</a> </p>
 
               <h3>Messaging Queues and Event Hubs</h3>
 
@@ -469,28 +594,26 @@
 
               <p>Two solutions were proposed. The first one was to use the Event Hubs service which provides most of the specified functionalities. The other one was the Azure Queue, which is a simple message queuing service with lower capabilities and fewer features. Although Event Hubs would be convenient to use, they are designed to hold a bigger amount of messages we could ever expect to be sent through this app. The additional features do not justify their costliness since they can be simulated by e.g. using multiple messaging queues.</p>
 
-              <p>A possible alternative to the Azure Queue implementation would be an open source tool rabbitMQ. While its capabilities are similar to the capabilities of Azure Queue. However, we have decided to use Azure Queues as they are easy to manage within the Azure portal. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>A possible alternative to the Azure Queue implementation would be an open source tool rabbitMQ. While its capabilities are similar to the capabilities of Azure Queue. However, we have decided to use Azure Queues as they are easy to manage within the Azure portal. You can read more about the specifics in <a href='#rdocs'>the Documents section below.</a></p>
 
               <h3>Authentication</h3>
 
-              <p>Authentication is a process that ensures and confirms a user’s identity. Since access control is normally based on the identity of the user who requests access to a resource or a service, authentication is essential to effective security.</p>
+              <p>Authentication is a process that ensures and confirms a user’s identity. Since access control is normally based on the identity of the user who requests access to a resource or a service, authentication is essential to effective security. OAuth is an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications. It is used as a way for Internet users to log in to third party websites through an access token mechanism, using their accounts at Google, Facebook, Microsoft, Twitter, etc.—but without exposing their password.</p> 
 
-              <p>OAuth is an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications. It is used as a way for Internet users to log in to third party websites through an access token mechanism, using their accounts at Google, Facebook, Microsoft, Twitter, etc.—but without exposing their password.</p>
+              <p>In this project we initially intended to use OAuth in conjunction with Azure Active Directory - Microsoft’s multi-tenant cloud based directory and identity management service. It is a powerful identity and access management service (IDaaS) for on-premises and cloud-based apps and provides administrators with the ability to manage end user identities and access privileges</p>
 
-              <p>In this project we use OAuth in conjunction with Azure Active Directory - Microsoft’s multi-tenant cloud based directory and identity management service. It is a powerful identity and access management service (IDaaS) for on-premises and cloud-based apps and provides administrators with the ability to manage end user identities and access privileges.</p>
-
-              <p>In order to use Active Directory, we had to register the application with the service, obtain the application Redirect URI, determine whether we were building a web or native application. A registered application is uniquely identified within the directory. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>By the beginning of second term, we learnt from Microsoft that we didn’t have the necessary Azure subscription to access the desired Active Directory service. We conducted research into the field of authentication and open source OAuth alternatives. Most of our existing application was already written in Node.js. We came across the Passport.js library - an authentication middleware for Node. A diverse set of strategies support authentication using a username and password, enabling login through Facebook or Google and others. It also permits Fitbit integration. We appreciated passport's modularity and flexibility and ended using this OAuth alternative as a replacement for Active Directory. You can read more about the specifics in<a href='#rdocs'>the Documents section below.</a></p>
 
               <h3>Data Visualisation</h3>
-              <p>An integral part of our project will be based on creation of visualisation for both client and corporate use. Visualisation enables decision makers to see analytics presented visually which makes grasping complex and large data easier. With interactive data visualisation you are able drill down in more specific details that require to find out how they are processed. Furthermore, an attractive data visualisation can help motivate users. It can also help users identify areas that need attention and improvement.</p>
+              <p>An integral part of our project will be based on creation of visualisation for Nuffield Health members to benefit from. Visualisation enables the members to see analytics presented visually which makes grasping complex and large data easier and more meaningful. With interactive data visualisation you are able drill down in more specific details that require to find out how they are processed. Furthermore, an attractive data visualisation can help motivate users. It can also help users identify areas that need attention and improvement.</p>
 
-              <p>To do this we have decided to use the platform D3.js. This is a JavaScript library for manipulating documents based on data. As stated from the D3.js website (d3js.org), “D3's emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combing powerful visualisation components and a data-driven approach to DOM manipulation."  Therefore, D3 is by far the best choice for our application, since it uses a functional style we are able to reuse code and add specific function to our content with great flexibility on the style and the interactive of our data.</p>
+              <p>To do this we have decided to look at two frameworks D3.js and charts.js. Both of these are JavaScript libraries for manipulating documents based on data. Both libraries provide sufficient functionalities for the purpose of our project, however after some investigation we came to the conclusion of using chats.js due to its simple but flexible javascript charting capabilities. Chart.js provides mixed chart types which provides a clear visual distinction between datasets. Additionally, it is animated as well as being interactive which increases the effectiveness of the visualisation.</p>
 
               <h3>Machine Learning</h3>
-              <p>Machine learning was born from pattern matching and based on the theory that computers can learn without being programmed to perform specific tasks. The theory is all about if a machine is able to learn from data that is provided by it using smart algorithms. For this project we will be using the Azure Machine Learning platform and train it using data about gym attendance of Nuffield Health. By doing so we hope to gain useful information where than we can provide to both the clients and corporate users valuable and beneficial information. By building precise models, an organisation such as Nuffield Health Hospital has a better chance of identifying profitable opportunities or avoiding unknown risks. You can read more about the specifics in <a href='#rdocs'>the Documents section bellow.</a></p>
+              <p>Machine learning was born from pattern matching and based on the theory that computers can learn without being programmed to perform specific tasks. The theory is all about if a machine is able to learn from data that is provided by it using smart algorithms. For this project we will be using the Azure Machine Learning platform and train it using data about gym attendance of Nuffield Health. By doing so we hope to gain useful information where than we can provide to both the clients and corporate users valuable and beneficial information. By building precise models, an organisation such as Nuffield Health Hospital has a better chance of identifying profitable opportunities or avoiding unknown risks. You can read more about the specifics in <a href='#rdocs'>the Documents section below.</a></p>
 
               <h3>Testing & Automation</h3>
-              <p>We’ve investigated testing tools that are adapted to the technologies we use in our project. A very suitable tool is the Azure Diagnostics functionality. It enables us to monitor requests and connections by gathering data about the activity that is generated. This would let us monitor the performance of the service from a customer perspective, and is also a major source of data for the Corporate version of our product.</p>
+              <p>We've investigated testing tools that are adapted to the technologies we use in our project. A very suitable tool is the Azure Diagnostics functionality. It enables us to monitor requests and connections by gathering data about the activity that is generated. This would let us monitor the performance of the service from a customer perspective, and is also a major source of data for the Corporate version of our product.</p>
 
               <p>Azure Diagnostics is functionality that needs to be configured on the different cloud services and virtual machines we make use of. We are interested in this tool because it enables us to test the robustness of the connections we make use of between queues and databases. This is done by collecting data and statistics on requests and connections related, web pages and services. Azure Diagnostics is particularly interesting because it is able to reduce the testing scope: it enables isolation of a service that is part of the product.</p>
 
@@ -1017,12 +1140,205 @@
           </div>
         </div>
 
-        <!-- Documents Section -->
-        <div id = 'documents' class = 'scrollable-page'>
+        <!-- HCI Section -->
+        <div id='hci' class='scrollable-page'>
+          <div class='container-fluid'>
+          <h1>Human Computer Interaction Principles</h1>
+          <p>In this section we will exploring some of the important HCI principles that we used within our project as well as showcasing screenshots of our final prototype and some initial sketches of the dashboard.</p>  
+           <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="img/design1.png">
+                  <img src="img/design1.png" style="width:100%">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/design2.png">
+                    <img src="img/design2.png" style="width:100%">
+                    <div class="caption">
+                      <p>Initial sketches of the dashboard with different possible graphs displayed.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/design3.png">
+                    <img src="img/design3.png" style="width:100%">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+        <h3>Visibility & Affordance</h3>
+        <p>Visibility and affordance play an important role in our approach of integrating HCI elements within our project. We designed the interfaces so that just the right things are made visible. With this in mind we wanted every click performed by the user to have direct effect on what they see on the interface. Our landing page is a very simple, yet characteristic interface and initial point of contact. Each button redirects to a page hosting a distinct login method. Similarly, our dashboard is organised in such a way that every click either redirects the user to another panel or generates a modal or a drop down list. Fairly simple and direct buttons are employed, and if they cannot be easily represented by a symbol, they are shown with their actual names in text.</p>
+
+        <h3>Feedback</h3>
+        <p>Our Dashboard provides human computer interaction feedback to the user in multiple ways. We have implemented features that satisfy user’s need for signals that confirm interaction and communication. For example, when the user logs in using Facebook, we pull recognisable data such as the name of the user and the profile picture and display it on Dashboard and profile of user. This provides the user with the confirmation that the authentication has effectively gone through. To amplify this communication between the user and the service, we have incorporated a greeting notification, using the name of the user. Furthermore, the actions performed on the dashboard translate into different graphs, providing the visual feedback needed by the user.</p>
+
+        <h3>Consistency</h3>
+        <p>Our approach of incorporating consistency in our human computer interaction efforts is reflected in our usage of a wrapper for the content alongside a uniform color scheme throughout the different dashboard pages. There is a consistent format for format, menus, notifications and other fundamental functionalities. We attempt to display as many graphs as possible using the same graph.js library in order to have a consistent responsiveness and homogenous interactions with the data. In addition to this, we placed consistency in our usage of the application logo, as it appears in conjunction with the API’s we make use of for example.</p>
+
+        <h3>Constraints</h3>
+        <p>We have made use of human computer interaction constraints in our application. For example, we intentionally wanted to keep the landing page (or login page) with a very simplistic design and little functionality other than the login buttons. This conveys the exclusive character of the service, but more importantly prevents the user from performing any undesired action before accessing a heavily documented page: the dashboard.</p>
+
+        <p>We have also made use of HCI constraints in the profile page of the user, limiting the user’s ability to personalise the service only to a certain extent. This prevents a chaotic and heterogeneous organisation of profiles and identifiers. We wanted the user to be able to change things, but only to a certain extent - hence the usage of a certain number of limited fields.</p>
+
+        <h3>Final Dashboard Design</h3>
+
+        <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="img/HomePage.png">
+                  <img src="img/HomePage.png" style="width:100%">
+                  <div class="caption">
+                      <p>Homepage of Transpire, includes social login as well as local login</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/Dashboard.png">
+                    <img src="img/Dashboard.png" style="width:100%">
+                    <div class="caption">
+                      <p>Dashboard visualising relevant user data using Graph.js</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/userdata.png">
+                    <img src="img/userdata.png" style="width:100%">
+                    <div class="caption">
+                      <p>Customizable user profile page</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/SharingData.png">
+                    <img src="img/SharingData.png" style="width:100%">
+                    <div class="caption">
+                      <p>User data sharing page</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="img/nuffmaps.png">
+                    <img src="img/nuffmaps.png" style="width:100%">
+                    <div class="caption">
+                      <p>Maps showing all of Nuffield Health London Gym Locations</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+           </div>
+        </div>
+      </div>
+
+      <!-- Design Section -->
+        <div id='design' class='scrollable-page'>
           <div class="container-fluid">
-            <h1>Documents</h1>
-            <h2>Bi-Weekly Reports</h2>
+          <h1>Design</h1>
+
+          <h3>System Architecture</h3>
+          <p>To view a full system architecture please refer to <a href='#rdocs'>the Documents section below.</a></p></p>
+
+          <h3>Design Patterns</h3>
+          <p><b>Design</b> patterns within Computer Science are very important since they allow us to easily maintain and scale software. By using design patterns we are trying to build software that makes sense, is reusable and bug free. The main design patterns we’ve made use of are: Model View Controller, Singleton, Factory, Bridge and Facade. </p>
+
+          <h4>Model View Controller</h4>
+          <p>Our user interface is implemented using the <b>Model View Controller</b> (MVC) pattern, allowing us to incorporate consistency across the various interfaces and efficiently reuse the existing layouts. This pattern is particularly relevant to our product for a number of reasons. We rely on a collection of views as we provide multiple representations of information in the form of a variety of charts and diagrams on our dashboard. Our dashboard and other interfaces are highly interactive, requiring the capabilities of a controller, accepting input and distributing relevant and converted data to the model and view components.</p>
+
+          <h4>Singleton</h4>
+          <p>The passport.js components, such as identification credentials, and the auth.js file are restricted in their instantiation to a single object. This is a manifestation of our usage of the <b>Singleton</b> design pattern, and enables us to coordinate actions across the system more efficiently.</p>
+
+          <h4>Factory</h4>
+          <p>The <b>Factory</b> design pattern is used across our product. For example, our graphs are generated using a common Graph.js framework and a similar dataset structure - rendering a homogeneous data visualisation dashboard. The function we use to create individual messages within the message queues employ a factory pattern as it is used to generate distinct messages from a common base.</p>
+
+          <h4>Facade</h4>
+          <p>The <b>Facade</b> design pattern appears in our routes.js file. This file gathers all the paths and calls to the database in conjunction with our data visualisations into one single component. It effectively makes our code more readable, making it easier to hand over for further development projects. It abstracts from the complexities of the larger numbers of interdependent classes and API’s we make use of, through a simple interface.</p>
+
+          <h3>Developer Tools</h3>
+          <p>We have used numerous tools to conduct this project. In addition to using git as our main version control tool and gitHub as our version control repository, we used Microsoft Visual Studio Team Services to facilitate communication through sprints or during integration features and functionalities. We also used it to create backlogs and assign tasks across the team, improving how we operate our incremental agile software development.</p>
+
+          <p>Google Drive was used as our main centralised file storage facility, providing access to all relevant documentation and reports produced and required by all team members. Google Drive was also used to enable our client to easily share relevant datasets with us.</p>
+
+          <p>A large part of our UI is provided by Bootstrap but includes crucial integrations of major APIs such as Google Maps and Facebook Graph (for identity name and profile picture). It also involves javascript libraries such as Graph.js for interactive graphs.</p>
+
+          <p>Our team did not require any specific IDE to conduct development on the project. Therefore, we used our favourite text editors, notably, Sublime Text and Atom.</p>
+
+          <h3>Implementation of Key Functionalities</h3>
+          <h4>Authentication</h4>
+          <p>One of our key functionalities were to implement social login implementation using industry authentication methodologies (OAuth). After having initially worked on an implementation of Azures Acive Directory identity management platform, we ended up using an open source tool called passport.js. Passport.js This is an authentication middleware for Node.js, which is what our application is written in. We used multiple passport.js strategies to support authentication using username and password through Facebook or Google.</p>
+
+          <p>We were required to follow the standard OAuth protocol from the start of the project, allowing users to authorize API access applications. This is supported by Passport. Implementing secure login required registering our Nuffield application with the various APIs (Google, Facebook), to obtain tokens and identifiers. Using Passport essentially allowed us to issue access tokens to third-party clients by</p>
+
+          <p><b><i>OAuth essentially allows access tokens to be issued to third-party clients by an authorization server, with the approval of the resource owner. The third party then uses the access token to access the protected resources hosted by the resource server.</i></b></p>
+
+          <h4>Visualisation</h4>
+          <p>Similarly to the authentication implementation, this functionality has been subject to change during the course of the project. We had initially set out to use D3.js -  a highly sophisticated JavaScript library for producing dynamic, interactive data visualizations in web browsers.</p>
+
+          <p>However, after several meetings with the client we concluded using another JavaScript library which seemed more appropriate for our use. Therefore, for our visualisation we used Graph.js which provided us customizable graphs within different sectors, great colour schemes as well as interactivity of our data. Furthermore, the library is very easy to use and well documented which makes it a lot user friendly when the project is passed on to continue for further development.</p>
+
+          <p>Finally, we have implemented a "goal set" strategy, where the users are able to set personal goals to their desired tasks. For example, a user is able to choose a goal of how many times a day they would like to go to the gym in a particular week or perhaps how many steps they would like to take in a day. These goals are analysed based on previous data, and by using machine learning each user receives a notification advising them on their set goal.</p>
+
+          <h4>Machine Learning</h4>
+          <p>During the development process of this project our team decided to using Microsoft's Azure Machine Learning to further advance the purpose of the project. We developed multiple Poisson Regression models called the "6 week models", based on Nuffield Health gym swipe data of their clients. By modularising and cleaning the data we trained the model to predict when it is likely a member is going to quit or cancel their membership.</p>
+
+          <p>Further simpler models have been created to indicate a "lazy" and an "active" user based on their personal health data. As each user is able to set goals for themselves within the dashboards, in regards to if they have or have not set a goal, they will receive a notification advising them on their goal set.</p>
+
+          <h4>Messaging Queue</h4>
+          <p>To be completed</p>
+
+          <h4>Health Data Sharing</h4>
+          <p>A key functionality and aim of this project has been to allow Transpire users to share their data with their permission securely. Our aim has been to create a health ecosystem to provide different users to feel empowered when they are sharing their data. This is done by creating engaging dashboards representing how their data can be shown to them in a meaningful way as well as partnering with trust worthy organisations where share of data is done to help research within specific fields.</p>
+
+          <p>As well as integrating specific Nuffield Health member data, our team has also integrated a GoogleFit data collection. This is done so that if the user has been using other third party mediums to record and monitor their health, they are also given the opportunity to view the relevant data on their Transpire dashboard. GoogleFit was implemented using the GoogleFit API and the Nuffield Health member data has been collected within our secure DocumentDB database on Azure and queried to be displayed on the dashboards.</p>
+
+          </div>
+        </div>
+
+        <!-- Testing Section -->
+        <div id='testing' class='scrollable-page'>
+          <div class="container-fluid">
+          <h1>Testing</h1>
+
+          </div>
+        </div>
+
+        <!-- Evaluation Section -->
+        <div id='evaluation' class='scrollable-page'>
+          <div class="container-fluid">
+          <h1>Evaluation</h1>
+
+          </div>
+        </div>
+
+
+        <!-- Documents Section -->
+        <div id = 'documentsManagement' class = 'scrollable-page'>
+          <div class="container-fluid">
+            <h1>Documents & Management</h1>
+            <h2>Bi-Weekly Reports And Meetings</h2>
+            <p>Below are presented all of our individual bi-weekly reports highlighting our progress during this project as well as a high level overall view of all of our meetings.</p>
             <div class="row">
+             <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="well">
+                  <h4><span class="glyphicon glyphicon-file"></span>All Meeting Records</h4>
+                  <h5>9 Apr 2016</h5>
+                  <h6><a href="documents/biweekly/Meetings_table.xlsx"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
+                </div>
+              </div>
               <div class="col-lg-4 col-md-6 col-xs-12">
                 <div class="well">
                   <h4><span class="glyphicon glyphicon-file"></span> Bi-Weekly Report 1</h4>
@@ -1086,9 +1402,29 @@
                   <h6><a href="documents/biweekly/BiWeeklyReport9.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
                 </div>
               </div>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="well">
+                  <h4><span class="glyphicon glyphicon-file"></span> Bi-Weekly Report 10</h4>
+                  <h5>24 March 2017</h5>
+                  <h6><a href="documents/biweekly/BiWeeklyReport10.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
+                </div>
+              </div>
+            </div>
+
+            <h2>User Manual</h2>
+            <p>Please view the document below for an indepth user manual guide of the system developed</p>
+
+            <div class = 'row'>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="well">
+                  <h4><span class="glyphicon glyphicon-file"></span>User Manual</h4>
+                  <h6><a href="documents/manual/TranspireUserManual.pdf"><span class="glyphicon glyphicon-download-alt"></span> Download</a></h6>
+                </div>
+              </div>
             </div>
 
             <h2 id='rdocs'>Research Reports</h2>
+            <p>Please view our in depth research reports and system architecture which includes all the appropriate IEEE refrences at the bottom</p>
             <div class = 'row'>
               <div class="col-lg-4 col-md-6 col-xs-12">
                 <div class="well">
@@ -1123,7 +1459,6 @@
             </div>
           </div>
         </div>
-
 
         <!-- END OF SECTIONS -->
       </div>
