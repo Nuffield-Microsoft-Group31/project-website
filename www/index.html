@@ -494,7 +494,7 @@
                   <li>Increased use of Nuffield Health Services</li>
                 </ul>
               </div>
-              
+
           </div>
         </div>
 
@@ -1239,8 +1239,31 @@
         <!-- Testing Section -->
         <div id='testing' class='scrollable-page'>
           <div class="container-fluid">
-          <h1>Testing</h1>
+            <h1>Testing</h1>
+            <p>During the different stages of the project, it was vital to include testing to preserve functionality with changes being added, ensure integration points are working and the UI meets usability requirements.</p>
 
+            <h2>Unit and Integration Testing</h2>
+            <p>These two were essential to ensure the system functioning as planned and to prevent side effects in other areas of the code when the system was amended or modified. The tests cases were designed to be repeated after changes took place. If they revealed a bug, the debugging took place. If it revealed further tests should be added, the test suite was amended.</p>
+            <p>Furthermore, if a bug was found that was not covered by formal test cases, a test case was thought of to futureproof software from that bug. It was then added to the formally defined testing suite and performed upon every future change of software.</p>
+
+            <h2>User Acceptance Testing</h2>
+            <p>The User Acceptance tests were performed throughout the development stage of the project where we were testing if the feature meets the need of users and clients. After a feature was added, it was presented to the client and the test users (friends and family) that gave us feedback. This approach was chosen to ensure </p>
+            <p>One of the largest challenges of this stage was to ensure the feedback given could help us improve the system. Although the general questions did provide us with a general idea of how the users find the UI, it was harder to get specific details of what to improve. As the usability is a bit more subjective than the predicates used in Unit and Integration testing, it was vital to ask test users specific questions to ensure we had a straightforward answer of what to improve.</p>
+
+            <h2>Responsive Design and Compatibility Testing</h2>
+            <p>The system was intended to run on a variety of different browsers and on screens of different sizes. This is why it was crucial to ensure the UI design was responsive and that the front-end was compatible with as many browsers as possible on different operating systems, including those on mobile devices.</p>
+            <p>The responsive design tests were carried out, firstly by resizing the browser screen and then after those were successful, the browser tools for responsive design were used. If those showed no errors, the system was also run on different devices with different screen sizes to ensure the UI displays properly.</p>
+            <p>Upon completion of those tests, different browsers were used on different operating systems and devices to identify any unwanted changes in the UI. Luckily, our team had a few different computer and mobile devices, covering the majority of Operating Systems so no devices needed to be borrowed from UCL.</p>
+            <p>If at any point the test failed, the frontend was debugged and all of the responsive design and compatibility tests were re-tested from the beginning. This ensured that fixing a bug did not result in new unhandled bugs.</p>
+
+            <h2>Automated Testing</h2>
+            <p>Although a lot of testing was performed empirically, certain test cases were automated during the later stages of the project. This helped to ensure lower time cost of testing and formalise the test cases.</p>
+            <p>Unit and Integration testing were partially automated using Unit.js framework. The tool was chosen due to its straightforwardness, ease of usability and short learning curve. The automated tests were run in terminal using Mocha, a Javascript testing tool. This is an example test result portion after the tests were run:</p>
+            <div class="thumbnail col-md-6">
+              <a href="img/tests.png">
+                <img src="img/tests.png">
+              </a>
+            </div>
           </div>
         </div>
 
@@ -1248,7 +1271,18 @@
         <div id='evaluation' class='scrollable-page'>
           <div class="container-fluid">
           <h1>Evaluation</h1>
-
+          <h2>Client Feedback</h2>
+              <blockquote class="blockquote-reverse">
+                <p>"The team has demonstrated a very high level of professionalism throughout the project. They have shown initiative during the requirements elicitation phase, being very active in building upon the high-level requirements given to them. The team was able to present a clear and well-formed vision of what the project should deliver.</p>
+                <p>Design and delivery were well planned and managed, incorporating feedback and ensuring regular meetings take place with the main stakeholders. The project was particularly challenging as the team was required to understand and use a wide range of technologies.</p>
+                <p>They team has clearly shown commitment to the project success, and throughout the project they were particularly good at managing expectations and delivering everything they have committed to.</p>
+                <p>The project is a clear success, and stakeholders in Nuffield are currently considering how the project can inform further digital initiatives."</p>
+                <footer>Alex Matei, Nuffield Health partner for this project</footer>
+              </blockquote>
+              <blockquote>
+                <p>"To Be Inserted Here"</p>
+                <footer>Paul Thomas, Microsoft partner for this project</footer>
+              </blockquote>
           </div>
         </div>
 
