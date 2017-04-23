@@ -30,7 +30,7 @@
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#requirements">Requirements</a></li>
             <li><a href="#research">Research & Technologies</a></li>
-            <li><a href="#experiments">Experiments</a></li>
+            <li><a href="#video">Video</a></li>
             <li><a href="#hci">HCI</a></li>
             <li><a href="#design">Design</a></li>
             <li><a href="#testing">Testing</a></li>
@@ -51,7 +51,7 @@
           <li><a href="#timeline">Timeline</a></li>
           <li><a href="#requirements">Requirements</a></li>
           <li><a href="#research">Research & Technologies</a></li>
-          <li><a href="#experiments">Experiments</a></li>
+          <li><a href="#video">Video</a></li>
           <li><a href="#hci">HCI</a></li>
           <li><a href="#design">Design</a></li>
           <li><a href="#testing">Testing</a></li>
@@ -407,7 +407,7 @@
 						      	<td>Restful API for the skype chat bot to access user data</td>
 						      	<td>MUST</td>
 						      	<td>Success</td>
-						      </tr>						      
+						      </tr>
 						    </tbody>
 						  </table>
 						  </div>
@@ -576,7 +576,7 @@
                     </div>
                   </div>
                 </div>
-              </div>   
+              </div>
 
               <h3>Non-Functional Requirements</h3>
               <div class="panel-group">
@@ -635,7 +635,7 @@
                     </div>
                   </div>
                 </div>
-              </div>           
+              </div>
 
               <h2>Personas</h2>
               <h3>George Williams</h3>
@@ -845,520 +845,13 @@
           </div>
         </div>
 
-        <!-- Experiments Section -->
-        <div id='experiments' class = 'scrollable-page'>
+        <!-- Video Section -->
+        <div id='video' class = 'scrollable-page'>
           <div class="container-fluid">
-              <h1>Experiments</h1>
-              <h3>Message Queuing</h3>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#mq01"><span class="glyphicon glyphicon-record green"></span> MQ01 Implement Multiple Queues and Populate</a>
-                    </h4>
-                  </div>
-                  <div id="mq01" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Setting up Azure Queues within a single storage account using python and populating them with mock data.</p>
-                            <h5>Results</h5>
-                            <p>Successfully setup multiple queues and populated with data.</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Nov 30</p>
-                            <h5>Done by</h5>
-                            <p>Jas</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#mq02"><span class="glyphicon glyphicon-record green"></span> MQ02 Retrieving Data From Queues</a>
-                    </h4>
-                  </div>
-                  <div id="mq02" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Dequeuing mock messages from the storage queues using python.</p>
-                            <h5>Results</h5>
-                            <p>Successfully dequeued messages from multiple queues populated with mock data.</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Nov 30</p>
-                            <h5>Done by</h5>
-                            <p>Jas</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#mq03"><span class="glyphicon glyphicon-record green"></span> MQ03 Implement publisher-consumer RESTful API mechanism</a>
-                    </h4>
-                  </div>
-                  <div id="mq03" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Implementing a simple REStful API allowing third party publishers to publish their data onto a queue (without having an access key). For the time being there is no authentication so it cannot be deployed yet.</p>
-                            <h5>Results</h5>
-                            <p>Successfully Implemented</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Dec 1 - Dec 6</p>
-                            <h5>Done by</h5>
-                            <p>Jas</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#mq04"><span class="glyphicon glyphicon-record"></span> MQ04 Implement Custom Authentication for RESTful API</a>
-                    </h4>
-                  </div>
-                  <div id="mq04" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>There is a need for authentication and it will be done by publisher/consumer acquiring a token from AD B2C and push it into the API along with a message. This token will then get verified by the API which will automatically publish/retrieve messages only to/from the queues authorised.</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>N/A</p>
-                            <h5>Done by</h5>
-                            <p>N/A</p>
-                            <h5>Status</h5>
-                            <p>Pending for Stage 2</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#mq05"><span class="glyphicon glyphicon-record"></span> MQ05 Deploying RESTful API</a>
-                    </h4>
-                  </div>
-                  <div id="mq05" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>API needs to be published and accessible to use by other components of the app.</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>N/A</p>
-                            <h5>Done by</h5>
-                            <p>N/A</p>
-                            <h5>Status</h5>
-                            <p>Pending for Stage 2</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <h3>Active Directory</h3>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#ad1"><span class="glyphicon glyphicon-record green"></span> AD01 Manipulate and set up Active directories</a>
-                    </h4>
-                  </div>
-                  <div id="ad1" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Manipulate and set up Active directories, add application registrations, configurations, add owners, access policies, and Identity providers</p>
-                            <h5>Results</h5>
-                            <p>Success</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Nov 20</p>
-                            <h5>Done by</h5>
-                            <p>Marc</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#ad2"><span class="glyphicon glyphicon-record yellow"></span> AD02 Integrate Azure AD into a web application using OpenID Connect</a>
-                    </h4>
-                  </div>
-                  <div id="ad2" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Use Microsoft’s multi-tenant cloud based directory and identity management service to host identities and enable access through identity layer on top of the OAuth 2.0 protocol required for webapps</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Nov 29 - </p>
-                            <h5>Done by</h5>
-                            <p>Marc</p>
-                            <h5>Status</h5>
-                            <p>In Progress</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#ad03"><span class="glyphicon glyphicon-record yellow"></span> AD03 Add Facebook as Identity provider and enable login to ADB2C and add identities through the Facebook API</a>
-                    </h4>
-                  </div>
-                  <div id="ad03" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Use Facebook’s secure, fast and convenient way for people to log into the app or website. This is done by identifying appID and secret and adding Facebook as Identity Provider within Azure ADB2C</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Nov 29 - </p>
-                            <h5>Done by</h5>
-                            <p>Marc</p>
-                            <h5>Status</h5>
-                            <p>In Progress</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#ad04"><span class="glyphicon glyphicon-record"></span> AD04 Provide token for consumer-publisher RESTful API mechanism</a>
-                    </h4>
-                  </div>
-                  <div id="ad04" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Azure AD B2C supports the OAuth 2.0 authorization protocol, which makes use of both access tokens and refresh tokens. Make use of this feature to enable publishers and consumers to communicate exchange messages destined to be queued.</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>N/A</p>
-                            <h5>Done by</h5>
-                            <p>N/A</p>
-                            <h5>Status</h5>
-                            <p>Pending for Stage 2</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#ad05"><span class="glyphicon glyphicon-record"></span> AD05 Provide the consumer-publisher RESTful API with authorised queues corresponding to token</a>
-                    </h4>
-                  </div>
-                  <div id="ad05" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Based on user preference, return the list of queues correcponding to the token</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>N/A</p>
-                            <h5>Done by</h5>
-                            <p>N/A</p>
-                            <h5>Status</h5>
-                            <p>Pending</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <h3>Databases</h3>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#db01"><span class="glyphicon glyphicon-record green"></span> DB01 Set up MongoDB on a Windows virtual machine on Azure</a>
-                    </h4>
-                  </div>
-                  <div id="db01" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>A NoSQL database which will store all of the data sent from publishers</p>
-                            <h5>Results</h5>
-                            <p>Successfully installed VM on windows 2012 azure</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Nov 16</p>
-                            <h5>Done by</h5>
-                            <p>Mo</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#db02"><span class="glyphicon glyphicon-record green"></span> DB02 Create sample database, tables and import data from MongoDB</a>
-                    </h4>
-                  </div>
-                  <div id="db02" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Test to see if able to create sample data within the database manually</p>
-                            <h5>Results</h5>
-                            <p>Sucessfully created a databse, with a table with smple data manaually</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Nov 23</p>
-                            <h5>Done by</h5>
-                            <p>Mo</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#db04"><span class="glyphicon glyphicon-record green"></span> DB03 Redirect authenticated messages to MongoDB</a>
-                    </h4>
-                  </div>
-                  <div id="db04" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Request to access the corresponding messages from the messaging queue and to store on MongoDB through a script</p>
-                            <h5>Results</h5>
-                            <p>Developed a Python script using the python driver Pymongo to connect the database with the messaging. The database is able to to pull new messages inside the database within specific tables.</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Dec 07</p>
-                            <h5>Done by</h5>
-                            <p>Mo & Jas</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#db04"><span class="glyphicon glyphicon-record green"></span> DB04 Automatically pull messages from Azure messaging queue</a>
-                    </h4>
-                  </div>
-                  <div id="db04" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Automation and scheduling of the script written to pull messages from the Azure queue</p>
-                            <h5>Results</h5>
-                            <p>Made the python script into an executable form where we were able to use scheduling through windows to pull messages from the Azure messaging queue every 5 minutes automatically whenever the database is connected</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>Dec 07</p>
-                            <h5>Done by</h5>
-                            <p>Mo & Jas</p>
-                            <h5>Status</h5>
-                            <p>Success</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#db03"><span class="glyphicon glyphicon-record"></span> DB05 Access authenticated publisher messages</a>
-                    </h4>
-                  </div>
-                  <div id="db03" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Access tokens through identification for authenticated publishers,therefore each message can be identified to the corresponding publisher</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>N/A</p>
-                            <h5>Done by</h5>
-                            <p>N/A</p>
-                            <h5>Status</h5>
-                            <p>Pending for Stage 2</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#db05"><span class="glyphicon glyphicon-record"></span> DB06 Set up Azure Machine Learning and base it on MongoDB resource</a>
-                    </h4>
-                  </div>
-                  <div id="db05" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-xs-12 col-md-8">
-                            <h5>Description</h5>
-                            <p>Machine learning has to be trained on the specific data from MongoDB which later will be used for visualisation and improvement of the system</p>
-                            <h5>Results</h5>
-                            <p>N/A</p>
-                          </div>
-                          <div class="col-xs-12 col-md-4">
-                            <h5>Date</h5>
-                            <p>N/A</p>
-                            <h5>Done by</h5>
-                            <p>N/A</p>
-                            <h5>Status</h5>
-                            <p>Pending for Stage 2</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              <h1>Video</h1>
+              <center style="height:85vh">
+                <iframe style="width:90%;height:100%" src="https://www.youtube.com/embed/7HqPGpwmZ_Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </center>
           </div>
         </div>
 
@@ -1520,7 +1013,11 @@
           <p>Further simpler models have been created to indicate a "lazy" and an "active" user based on their personal health data. As each user is able to set goals for themselves within the dashboards, in regards to if they have or have not set a goal, they will receive a notification advising them on their goal set.</p>
 
           <h4>Messaging Queue</h4>
-          <p>To be completed</p>
+          <p>Messaging queue is the backbone of the system's architecture. Its main function is to ensure the data from different sources gets organised in a single place before being visualised and shared.</p>
+
+          <p>The data is being pulled from publishers like Google Fit multiple times a day and published following the standardised JSON message format via our API. They get sent to appropriate queues based on the users' preferences (each subscriber has a queue) and to the main queue. The messages from the main queue are automatically pushed into our database collections.</p>
+
+          <p>This provides opportunities for more publishers and subscribers to be added without modifying the system. In addition to that, it prevents the publishing and consuming of data to cause bottlenecking.</p>
 
           <h4>Health Data Sharing</h4>
           <p>A key functionality and aim of this project has been to allow Transpire users to share their data with their permission securely. Our aim has been to create a health ecosystem to provide different users to feel empowered when they are sharing their data. This is done by creating engaging dashboards representing how their data can be shown to them in a meaningful way as well as partnering with trust worthy organisations where share of data is done to help research within specific fields.</p>
