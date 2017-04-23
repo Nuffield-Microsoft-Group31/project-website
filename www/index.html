@@ -845,7 +845,7 @@
           </div>
         </div>
 
-        <!-- Experiments Section -->
+        <!-- Video Section -->
         <div id='video' class = 'scrollable-page'>
           <div class="container-fluid">
               <h1>Video</h1>
@@ -1013,7 +1013,11 @@
           <p>Further simpler models have been created to indicate a "lazy" and an "active" user based on their personal health data. As each user is able to set goals for themselves within the dashboards, in regards to if they have or have not set a goal, they will receive a notification advising them on their goal set.</p>
 
           <h4>Messaging Queue</h4>
-          <p>To be completed</p>
+          <p>Messaging queue is the backbone of the system's architecture. Its main function is to ensure the data from different sources gets organised in a single place before being visualised and shared.</p>
+
+          <p>The data is being pulled from publishers like Google Fit multiple times a day and published following the standardised JSON message format via our API. They get sent to appropriate queues based on the users' preferences (each subscriber has a queue) and to the main queue. The messages from the main queue are automatically pushed into our database collections.</p>
+
+          <p>This provides opportunities for more publishers and subscribers to be added without modifying the system. In addition to that, it prevents the publishing and consuming of data to cause bottlenecking.</p>
 
           <h4>Health Data Sharing</h4>
           <p>A key functionality and aim of this project has been to allow Transpire users to share their data with their permission securely. Our aim has been to create a health ecosystem to provide different users to feel empowered when they are sharing their data. This is done by creating engaging dashboards representing how their data can be shown to them in a meaningful way as well as partnering with trust worthy organisations where share of data is done to help research within specific fields.</p>
